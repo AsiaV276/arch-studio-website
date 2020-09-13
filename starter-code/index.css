@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+}
+
+header {
+    overflow: hidden;
+    padding: 20px;
+    
+}
+header .logo {
+    float: left;
+    
+}
+.logo img {
+    width: 75px;
+}
+.menu-icon {
+    float: right;
+    align-self: center;
+}
+.menu-content {
+    display: none;
+}
+
+#carousel-banner {
+    height: 600px;
+    border: black solid 1px;
+}
+
+.portfolio {
+    background-image: url('./assets/home/mobile/image-hero-paramour.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding: 35px;
+    color: white;
+}
+.see-portfolio-btn {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+}
+.banner-desktop {
+    display: none;
+}
+
+.welcome-desktop {
+    display: none;
+}
+
+.about-us-section {
+    background-image: url('./assets/home/mobile/image-small-team.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.about-us-section .inner-text{
+    padding: 250px 50px 250px 50px;
+}
+
+.featured-section {
+    margin: 35px;
+}
+.featured-section h1 {
+    padding-bottom: 50px;
+}
+.see-all-btn {
+    display: none;
+}
+.feat-projects {
+    width: auto;
+    height: 169px;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding: 25px;
+}
+.prj1 {
+    background-image: url('./assets/portfolio/mobile/image-del-sol.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.prj2 {
+    background-image: url('./assets/portfolio/mobile/image-228b.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.prj3 {
+    background-image: url('./assets/portfolio/mobile/image-prototype.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.feat-projects p {
+    padding-bottom: 10px;
+}
+.feat-projects a {
+    text-decoration: none;
+}
+
+
+
