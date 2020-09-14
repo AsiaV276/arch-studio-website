@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: Spartan;
 }
 
 header {
@@ -23,19 +24,27 @@ header .logo {
 }
 
 #carousel-banner {
-    height: 600px;
+    height: 500px;
     border: black solid 1px;
+    
 }
-
+.image-overlay {
+    padding: 35px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.35);
+}
 .portfolio {
     background-image: url('./assets/home/mobile/image-hero-paramour.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
-    padding: 35px;
+    height: 100%;
     color: white;
 }
-.see-portfolio-btn {
+.portfolio h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+.btn {
     border: none;
     background-color: black;
     color: white;
@@ -68,30 +77,31 @@ header .logo {
     display: none;
 }
 .feat-projects {
-    width: auto;
-    height: 169px;
+    width: 100%;
+    height: 200px;
     margin: auto;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-content: flex-end;
-    padding: 25px;
+    /*padding: 25px;*/
+    color: white;
 }
 .prj1 {
     background-image: url('./assets/portfolio/mobile/image-del-sol.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .prj2 {
     background-image: url('./assets/portfolio/mobile/image-228b.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .prj3 {
     background-image: url('./assets/portfolio/mobile/image-prototype.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .feat-projects p {
     padding-bottom: 10px;
@@ -99,6 +109,20 @@ header .logo {
 .feat-projects a {
     text-decoration: none;
 }
-
-
+footer {
+    padding: 50px;
+    background-color: gray;
+}
+.footer-list {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer-list li {
+    margin: 20px;
+}
+footer .btn {
+    width: 100%;
+    
+}
 

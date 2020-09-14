@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Arch Studio Website Challenge</title>
@@ -31,15 +32,15 @@
   
   <section id="carousel-banner">
     <div class="portfolio">
-      <h1>Project Paramour</h1>
-      <br>
-      <p>Project made for an art museum near Southwest London. Project Paramour is 
-        a statement of bold, modern architecture.
-      </p>
-      <br>
-      <button class="see-portfolio-btn">See Our Portfolio</button>
-      
-  
+      <div class="image-overlay">
+        <h1>Project Paramour</h1>
+        <br>
+        <p>Project made for an art museum near Southwest London. Project Paramour is 
+          a statement of bold, modern architecture.
+        </p>
+        <br>
+        <button class="btn">See Our Portfolio</button>
+      </div>
     </div>
     <div class="banner-desktop">
       Seraph Station
@@ -96,7 +97,7 @@
     <div class="inner-text">
       <h1>Small team, big ideas</h1>
     
-      <button>About Us</button>
+      <button class="btn">About Us</button>
   </div>
   </section>
   
@@ -106,35 +107,37 @@
     <button class="see-all-btn">See all</button>
 
     <div class="feat-projects prj1">
-      1
-      <p>Project Del Sol</p>
-      <p><a href="" id="view-project-link">View All Projects</a></p>
+      <div class="image-overlay">
+        1
+        <p>Project Del Sol</p>
+        <p><a href="" id="view-project-link">View All Projects</a></p>
+      </div>
     </div>
     <div class="feat-projects prj2">
-      2
-      <p>228B Tower</p>
-      <p><a href="" id="view-project-link">View All Projects</a></p>
-      
+      <div class="image-overlay">
+        2
+        <p>228B Tower</p>
+        <p><a href="" id="view-project-link">View All Projects</a></p>
+      </div>
     </div>
     <div class="feat-projects prj3">
-      3
-      <p>Le Prototype</p>
-      <p><a href="" id="view-project-link">View All Projects</a></p>
+      <div class="image-overlay">
+        3
+        <p>Le Prototype</p>
+        <p><a href="" id="view-project-link">View All Projects</a></p>
+      </div>
     </div>
-    
-
-    
-
-    
-
   </section>
 
   <footer>
-    Portfolio
-    About Us
-    Contact
-
-    See Our Portfolio
+    <ul class="footer-list">
+      <li>Portfolio</li>
+      <li>About Us</li>
+      <li>Contact</li>
+    </ul>
+    <button class="btn">See Our Portfolio</button>
+    
+    
   </footer>
 </body>
 </html>
