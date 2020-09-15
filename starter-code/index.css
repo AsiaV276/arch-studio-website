@@ -2,12 +2,18 @@
     margin: 0;
     font-family: Spartan;
 }
-
+p {
+    line-height: 30px;
+}
 .btn {
     border: none;
     background-color: black;
     color: white;
     padding: 15px 30px;
+}
+.btn a {
+    text-decoration: none;
+    color: white;
 }
 
 /* header */
@@ -21,10 +27,16 @@ header .logo {
 .logo img {
     width: 75px;
 }
-.menu-icon {
+#menu-icon {
     float: right;
     align-self: center;
-    position: relative;
+    margin-top: 5px;
+}
+#close {
+    display: none;
+}
+#hamburger {
+    display: block;
 }
 #menu-content {
     display: none;
@@ -44,7 +56,15 @@ header .logo {
 #menu-content li {
     padding-bottom: 20px;
 }
+#menu-content a {
+    text-decoration: none;
+    color: black;
+}
+header aside {
+    display: none;
+}
 
+/* Carousel banner*/
 .image-overlay {
     padding: 35px;
     height: 100%;
@@ -73,7 +93,7 @@ header .logo {
 }
 
 /* welcome section */
-.welcome-section {
+#welcome-section {
     padding-top: 50px;
     margin: 25px;
     padding-bottom: 50px;
@@ -86,26 +106,26 @@ header .logo {
 }
 
 /* about us section */
-.about-us-section {
+#about-us-section {
     background-image: url('./assets/home/mobile/image-small-team.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
-.about-us-section h1 {
+#about-us-section h1 {
     font-size: 30px;
     padding-bottom: 25px;
 }
-.about-us-section .image-overlay{
+#about-us-section .image-overlay{
     padding: 250px 50px 250px 50px;
 }
 
 
 /* featured section*/
-.featured-section {
+#featured-section-main {
     margin: 35px;
 }
-.featured-section h1 {
+#featured-section-main h1 {
     padding-bottom: 50px;
 }
 .see-all-btn {
@@ -128,8 +148,12 @@ header .logo {
 .feat-projects a {
     text-decoration: none;
 }
-.featured-section .btn {
+#featured-section-main .btn {
     width: 100%;
+}
+.view-project-link {
+    text-decoration: none;
+    color: white;
 }
 
 /* footer */
@@ -146,7 +170,68 @@ footer {
 .footer-list li {
     margin: 20px;
 }
+.footer-list a {
+    text-decoration: none;
+    color: black;
+}
 footer .btn {
     width: 100%;
 }
 
+
+/* Tablet CSS */
+@media screen and (min-width: 768px) {
+    body {
+        margin: 35px;
+        padding: 10px;
+        position: relative;
+    }
+    header aside {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: 0 0;
+        transform: rotate(90deg);
+    }
+    header hr {
+        position: absolute;
+        left: -35px;
+        width: 100px;
+    }
+    header p {
+        width: 200px;
+        position: absolute;
+        left: 115px;
+        top: -12px;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 12px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+    #menu-content {
+        display: block;
+        width: auto;
+        left: 150px;
+        top: 20px;
+    }
+    #menu-content ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+    #menu-content li {
+        padding: 15px;
+        padding-right: 50px;
+        display: block;
+    }
+    section {
+        margin: 25px;
+    }
+
+} 

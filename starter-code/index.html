@@ -16,21 +16,24 @@
   <header>
     <div class="header-container">
       <div class="logo">
-        <img src="./assets/logo.svg" alt="">
+        <a href="./index.html"><img src="./assets/logo.svg" alt=""></a>
       </div>
       <div class="menu">
-        <div class="menu-icon" onclick="openMenu()">
-          <img src="./assets/icons/icon-hamburger.svg" alt="">
+        <div id="menu-icon" onclick="openMenu()">
+          <img src="./assets/icons/icon-hamburger.svg" alt="" id="hamburger">
+          <img src="./assets/icons/icon-close.svg" alt="" id="close">
         </div>
         <nav id="menu-content">
           <ul>
-            <li>Portfolio</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
+    
+    <aside><hr><p>Home</p></aside>
   </header>
   
   <section id="carousel-banner">
@@ -42,42 +45,42 @@
           a statement of bold, modern architecture.
         </p>
         <br>
-        <button class="btn">See Our Portfolio</button>
+        <button class="btn"><a href="./portfolio.html">See Our Portfolio</a></button>
       </div>
     </div>
     <div class="banner-desktop">
       Seraph Station
   
-    The Seraph Station project challenged us to design a unique station that would 
-    transport people through time. The result is a fresh and futuristic model 
-    inspired by space stations.
-  
-    See Our Portfolio
-  
-    Federal II Tower
-  
-    A sequel theme project for a tower originally built in the 1800s. We achieved 
-    this with a striking look of brutal minimalism with modern touches.
+      The Seraph Station project challenged us to design a unique station that would 
+      transport people through time. The result is a fresh and futuristic model 
+      inspired by space stations.
     
-    See Our Portfolio
-  
-    Trinity Bank Tower
-  
-    Trinity Bank challenged us to make a concept for a 84 story building located 
-    in the middle of a city with a high earthquake frequency. For this project we 
-    used curves to blend design and stability to meet our objectives.
-  
-    See Our Portfolio
-  
-    01
-    02
-    03
-    04
+      See Our Portfolio
+    
+      Federal II Tower
+    
+      A sequel theme project for a tower originally built in the 1800s. We achieved 
+      this with a striking look of brutal minimalism with modern touches.
+      
+      See Our Portfolio
+    
+      Trinity Bank Tower
+    
+      Trinity Bank challenged us to make a concept for a 84 story building located 
+      in the middle of a city with a high earthquake frequency. For this project we 
+      used curves to blend design and stability to meet our objectives.
+    
+      See Our Portfolio
+    
+      01
+      02
+      03
+      04
     </div>
     
   </section>
 
-  <section class="welcome-section">
+  <section id="welcome-section">
     <h1 class="welcome-desktop">Welcome</h1>
     
     <h1>Welcome to Arch Studio</h1>
@@ -96,15 +99,15 @@
     <br><br>
   </section>
 
-  <section class="about-us-section">
+  <section id="about-us-section">
     <div class="image-overlay">
         <h1>Small team,</h1>
          <h1>big ideas</h1>
-        <button class="btn">About Us</button>
+        <button class="btn"><a href="./about.html">About Us</a></button>
     </div>
   </section>
   
-  <section class="featured-section">
+  <section id="featured-section-main">
     <h1>Featured</h1>
 
     <button class="see-all-btn">See all</button>
@@ -113,34 +116,34 @@
       <div class="image-overlay">
         1
         <p>Project Del Sol</p>
-        <p><a href="" id="view-project-link">View All Projects</a></p>
+        <p><a href="./portfolio.html" class="view-project-link">View All Projects</a></p>
       </div>
     </div>
     <div class="feat-projects project-img tower">
       <div class="image-overlay">
         2
         <p>228B Tower</p>
-        <p><a href="" id="view-project-link">View All Projects</a></p>
+        <p><a href="./portfolio.html" class="view-project-link">View All Projects</a></p>
       </div>
     </div>
     <div class="feat-projects project-img proto">
       <div class="image-overlay">
         3
         <p>Le Prototype</p>
-        <p><a href="" id="view-project-link">View All Projects</a></p>
+        <p><a href="./portfolio.html" class="view-project-link">View All Projects</a></p>
       </div>
     </div>
-    <button class="btn">See all</button>
+    <button class="btn"><a href="./portfolio.html">See all</a></button>
   </section>
 
 
   <footer>
     <ul class="footer-list">
-      <li>Portfolio</li>
-      <li>About Us</li>
-      <li>Contact</li>
+      <li><a href="./portfolio.html">Portfolio</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./contact.html">Contact</a></li>
     </ul>
-    <button class="btn">See Our Portfolio</button>
+    <button class="btn"><a href="./portfolio.html">See Our Portfolio</a></button>
   </footer>
   <script src="./index.js"></script>
 </body>

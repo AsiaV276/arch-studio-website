@@ -16,24 +16,27 @@
   <header>
     <div class="header-container">
       <div class="logo">
-        <img src="./assets/logo.svg" alt="">
+        <a href="./index.html"><img src="./assets/logo.svg" alt=""></a>
       </div>
       <div class="menu">
-        <div class="menu-icon" onclick="openMenu()">
-          <img src="./assets/icons/icon-hamburger.svg" alt="">
+        <div id="menu-icon" onclick="openMenu()">
+          <img src="./assets/icons/icon-hamburger.svg" alt="" id="hamburger">
+          <img src="./assets/icons/icon-close.svg" alt="" id="close">
         </div>
         <nav id="menu-content">
           <ul>
-            <li>Portfolio</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
+
+    <aside><hr><p>Portfolio</p></aside>
   </header>
 
-  <section class="featured-section">
+  <section id="featured-section">
     <div class="feat-projects project-img seraph">
       <div class="image-overlay">
         <p>Seraph Station</p>
@@ -110,9 +113,9 @@
 
   <footer>
     <ul class="footer-list">
-      <li>Portfolio</li>
-      <li>About Us</li>
-      <li>Contact</li>
+      <li><a href="./portfolio.html">Portfolio</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./contact.html">Contact</a></li>
     </ul>
     <button class="btn">See Our Portfolio</button>
   </footer>

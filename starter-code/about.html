@@ -17,36 +17,40 @@
   <header>
     <div class="header-container">
       <div class="logo">
-        <img src="./assets/logo.svg" alt="">
+        <a href="./index.html"><img src="./assets/logo.svg" alt=""></a>
       </div>
       <div class="menu">
-        <div class="menu-icon" onclick="openMenu()">
-          <img src="./assets/icons/icon-hamburger.svg" alt="">
+        <div id="menu-icon" onclick="openMenu()">
+          <img src="./assets/icons/icon-hamburger.svg" alt="" id="hamburger">
+          <img src="./assets/icons/icon-close.svg" alt="" id="close">
         </div>
         <nav id="menu-content">
           <ul>
-            <li>Portfolio</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
+
+    <aside><hr><p>About Us</p></aside>
   </header>
 
-  <section >
-    <img src="./assets/about/mobile/image-hero.jpg" alt="">
+  <section class="banner">
+    <div class="image-overlay"></div>
   </section>
+
   <section class="about-main">
-    <div>
+    <div class="banner-box">
+      <p class="banner-title">About</p>
       <h1>Your team of professionals</h1>
-      <div>
-        <p>Our small team of world-class professionals will work with you every step of the way. 
-          Strong relationships are at the core of everything we do. This extends to the 
-          relationship our projects have with their surroundings.
-        </p>
-      </div>
+      <p>Our small team of world-class professionals will work with you every step of the way. 
+        Strong relationships are at the core of everything we do. This extends to the 
+        relationship our projects have with their surroundings.
+      </p>
     </div>
+    <div class="space"></div>
     <div>
     <h1>Our Heritage</h1>
       <div>
@@ -92,9 +96,9 @@
 
   <footer>
     <ul class="footer-list">
-      <li>Portfolio</li>
-      <li>About Us</li>
-      <li>Contact</li>
+      <li><a href="./portfolio.html">Portfolio</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./contact.html">Contact</a></li>
     </ul>
     <button class="btn">See Our Portfolio</button>
   </footer>

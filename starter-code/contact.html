@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./portfolio.css">
+  <link rel="stylesheet" href="./contact.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
@@ -16,36 +17,43 @@
   <header>
     <div class="header-container">
       <div class="logo">
-        <img src="./assets/logo.svg" alt="">
+        <a href="./index.html"><img src="./assets/logo.svg" alt=""></a>
       </div>
       <div class="menu">
-        <div class="menu-icon" onclick="openMenu()">
-          <img src="./assets/icons/icon-hamburger.svg" alt="">
+        <div id="menu-icon" onclick="openMenu()">
+          <img src="./assets/icons/icon-hamburger.svg" alt="" id="hamburger">
+          <img src="./assets/icons/icon-close.svg" alt="" id="close">
         </div>
         <nav id="menu-content">
           <ul>
-            <li>Portfolio</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
+
+    <aside><hr><p>Contact</p></aside>
   </header>
 
-  <section>
-    <img src="./assets/contact/mobile/image-hero.jpg" alt="">
+  <section class="banner">
+    <div class="image-overlay"></div>
   </section>
 
-  <section>
-    <h1>Tell us about your project</h1>
-    <p>We’d love to hear more about your project. Please, leave a message below or give 
-      us a call. We have two offices, one in Texas and one in Tennessee. If you find 
-      yourself nearby, come say hello!
-    </p>
+  <section id="tell-about">
+    <div class="banner-box">
+      <p class="banner-title">Contact</p>
+      <h1>Tell us about your project</h1>
+      <br>
+      <p>We’d love to hear more about your project. Please, leave a message below or give 
+        us a call. We have two offices, one in Texas and one in Tennessee. If you find 
+        yourself nearby, come say hello!
+      </p>
+    </div>
   </section>
-
-  <section>
+  <div class="space"></div>
+  <section id="details">
     <h1>Contact Details</h1>
     
     <p>Main Office
@@ -53,36 +61,47 @@
       Address: 1892 Chenoweth Drive TN
       Phone: 123-456-3451
     </p>
+
+    <p><a href="">View on Map</a></p>
+    
+    
+    <p>
+    Office II
+    Mail: archtwo@mail.com
+    Address: 3399 Wines Lane TX
+    Phone: 832-123-4321
+    </p>
+
+    <p><a href="">View on Map</a></p>
   </section>
 
   
-  <p><a href="">View on Map</a></p>
   
-  
-  <p>
-  Office II
-  Mail: archtwo@mail.com
-  Address: 3399 Wines Lane TX
-  Phone: 832-123-4321
-  </p>
-
-  <p><a href="">View on Map</a></p>
 
   
   <img src="./assets/contact/mobile/image-map.png" alt="">
 
-  <h1>Connect with us</h1>
+  <section id="connect">
+    <h1>Connect</h1>
+    <h1>with us</h1>
+    
+    <form action="" id="form">
+      <label for="name"></label>
+      <input type="text" name="name" id="name" placeholder="Name">
+      <label for="email"></label>
+      <input type="text" name="email" id="email" placeholder="Email">
+      <label for="message"></label>
+      <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+      <button><img src="./assets/icons/icon-arrow.svg" alt=""></button>
+    </form>
+  </section>
   
-
-  Name
-  Email
-  Message
-
+  
   <footer>
     <ul class="footer-list">
-      <li>Portfolio</li>
-      <li>About Us</li>
-      <li>Contact</li>
+      <li><a href="./portfolio.html">Portfolio</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./contact.html">Contact</a></li>
     </ul>
     <button class="btn">See Our Portfolio</button>
   </footer>
