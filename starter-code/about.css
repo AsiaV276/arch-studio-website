@@ -1,0 +1,25 @@
+.about-main {
+    margin: 35px;
+}
+.about-main div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.leader-section {
+    margin: 35px;
+}
+.leader-profile {
+    margin-top: 35px;
+}
+.leader-profile img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+.job-title {
+    font-size: small;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+

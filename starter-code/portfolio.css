@@ -1,0 +1,45 @@
+* {
+    font-family: Spartan;
+}
+
+.project-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seraph {
+    background-image: url('./assets/portfolio/mobile/image-seraph.jpg');
+}
+.eebox {
+    background-image: url('./assets/portfolio/mobile/image-eebox.jpg');
+}
+.federal {
+    background-image: url('./assets/portfolio/mobile/image-federal.jpg');
+}
+.delsol {
+    background-image: url('./assets/portfolio/mobile/image-del-sol.jpg');
+}
+.proto {
+    background-image: url('./assets/portfolio/mobile/image-prototype.jpg');
+}
+.tower {
+    background-image: url('./assets/portfolio/mobile/image-228b.jpg');
+}
+.edelweiss {
+    background-image: url('./assets/portfolio/mobile/image-edelweiss.jpg');
+}
+.netcry {
+    background-image: url('./assets/portfolio/mobile/image-netcry.jpg');
+}
+.hypers {
+    background-image: url('./assets/portfolio/mobile/image-hypers.jpg');
+}
+.sxiv {
+    background-image: url('./assets/portfolio/mobile/image-sxiv.jpg');
+}
+.trinity {
+    background-image: url('./assets/portfolio/mobile/image-trinity.jpg');
+}
+.paramour {
+    background-image: url('./assets/portfolio/mobile/image-paramour.jpg');
+}

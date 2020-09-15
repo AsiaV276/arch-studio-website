@@ -4,57 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./portfolio.css">
+  <link rel="stylesheet" href="./about.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Arch Studio Website Challenge</title>
 </head>
 <body>
 
-  About Us
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="./assets/logo.svg" alt="">
+      </div>
+      <div class="menu">
+        <div class="menu-icon">
+          <img src="./assets/icons/icon-hamburger.svg" alt="">
+        </div>
+        <nav class="menu-content">
+          Home
+          Portfolio
+          About Us
+          Contact
+        </nav>
+      </div>
+    </div>
+  </header>
 
-  Portfolio
-  About Us
-  Contact
+  <section >
+    <img src="./assets/about/mobile/image-hero.jpg" alt="">
+  </section>
+  <section class="about-main">
+    <div>
+      <h1>Your team of professionals</h1>
+      <div>
+        <p>Our small team of world-class professionals will work with you every step of the way. 
+          Strong relationships are at the core of everything we do. This extends to the 
+          relationship our projects have with their surroundings.
+        </p>
+      </div>
+    </div>
+    <div>
+    <h1>Our Heritage</h1>
+      <div>
+        <p>Founded in 2007, we started as a trio of architects. Our complimentary skills and 
+          relentless attention to detail turned Arch into one of the most sought after boutique 
+          firms in the country.
+        </p>
+        <br>
+        <p>Speciliazing in Urban Design allowed us to focus on creating exceptional structures that 
+          live in harmony with their surroundings. We consider every detail from every surrounding 
+          element to inform our designs.
+        </p>
+        <br>
+        <p>Our small team of world-class professionals provides input on every project.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="leader-section">
+    <h1>The</h1>
+    <h1>Leaders</h1>
+    <div class="leader-profile">
+      <img src="./assets/about/desktop/avatar-jake.jpg" alt="">
+      <p>Jake Richards</p>
+      <p class="job-title">Chief Architect</p>
+    </div>
+    <div class="leader-profile">
+      <img src="./assets/about/desktop/avatar-thompson.jpg" alt="">
+      <p>Thompson Smith</p>
+      <p class="job-title">Head of Finance</p>
+    </div>
+    <div class="leader-profile">
+      <img src="./assets/about/desktop/avatar-jackson.jpg" alt="">
+      <p>Jackson Rourke</p>
+      <p class="job-title">Lead Designer</p>
+    </div>
+    <div class="leader-profile">
+      <img src="./assets/about/desktop/avatar-maria.jpg" alt="">
+      <p>Maria Simpson</p>
+      <p class="job-title">Senior Architect</p>
+    </div>
+  </section>
 
-  About
-
-  Your team of professionals
-
-  Our small team of world-class professionals will work with you every step of the way. 
-  Strong relationships are at the core of everything we do. This extends to the 
-  relationship our projects have with their surroundings.
-
-  Our Heritage
-
-  Founded in 2007, we started as a trio of architects. Our complimentary skills and 
-  relentless attention to detail turned Arch into one of the most sought after boutique 
-  firms in the country.
-
-  Speciliazing in Urban Design allowed us to focus on creating exceptional structures that 
-  live in harmony with their surroundings. We consider every detail from every surrounding 
-  element to inform our designs. 
-
-  Our small team of world-class professionals provides input on every project.
-
-  The Leaders
-
-  Jake Richards
-  Chief Architect
-
-  Thompson Smith
-  Head of Finance
-
-  Jackson Rourke
-  Lead Designer
-
-  Maria Simpson
-  Senior Architect
-
-  Portfolio
-  About Us
-  Contact
-
-  See Our Portfolio
+  <footer>
+    <ul class="footer-list">
+      <li>Portfolio</li>
+      <li>About Us</li>
+      <li>Contact</li>
+    </ul>
+    <button class="btn">See Our Portfolio</button>
+  </footer>
 
 </body>
 </html>
