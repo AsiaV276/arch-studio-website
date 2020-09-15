@@ -24,9 +24,25 @@ header .logo {
 .menu-icon {
     float: right;
     align-self: center;
+    position: relative;
 }
-.menu-content {
+#menu-content {
     display: none;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    width: 90%;
+}
+#menu-content ul {
+    list-style: none;
+    margin-left: 0;
+    margin: 40px;
+    padding-left: 0;
+}
+#menu-content li {
+    padding-bottom: 20px;
 }
 
 .image-overlay {

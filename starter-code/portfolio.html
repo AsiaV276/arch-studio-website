@@ -19,14 +19,15 @@
         <img src="./assets/logo.svg" alt="">
       </div>
       <div class="menu">
-        <div class="menu-icon">
+        <div class="menu-icon" onclick="openMenu()">
           <img src="./assets/icons/icon-hamburger.svg" alt="">
         </div>
-        <nav class="menu-content">
-          Home
-          Portfolio
-          About Us
-          Contact
+        <nav id="menu-content">
+          <ul>
+            <li>Portfolio</li>
+            <li>About Us</li>
+            <li>Contact</li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -106,7 +107,7 @@
       </div>
     </div>
   </section>
-  
+
   <footer>
     <ul class="footer-list">
       <li>Portfolio</li>
@@ -115,6 +116,6 @@
     </ul>
     <button class="btn">See Our Portfolio</button>
   </footer>
-
+<script src="./index.js"></script>
 </body>
 </html>
