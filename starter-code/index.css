@@ -64,32 +64,40 @@ header aside {
     display: none;
 }
 
-/* Carousel banner*/
+/* Slideshow banner*/
+.slides {
+    display: none;
+}
+.slides:first-of-type {
+    display: block;
+    position: relative;
+}
+.dot-container {
+    display: none;
+}
 .image-overlay {
     padding: 35px;
     height: 100%;
     background-color: rgba(0,0,0,0.35);
 }
-#carousel-banner .image-overlay{
+#slideshow-container .image-overlay{
     padding: 150px 35px;
 }
-.portfolio {
+.slides {
     background-image: url('./assets/home/mobile/image-hero-paramour.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     color: white;
 }
-.portfolio h1 {
+
+.slides h1 {
     font-weight: bold;
     font-size: 40px;
 }
-.portfolio .btn {
-    margin-top: 75px;
-}
+.slides .btn {
 
-.banner-desktop {
-    display: none;
+    /*margin-top: 75px;*/
 }
 
 /* welcome section */
@@ -178,6 +186,11 @@ footer .btn {
     width: 100%;
 }
 
+.page-break {
+    width: 100px;
+    margin-bottom: 75px;
+}
+
 
 /* Tablet CSS */
 @media screen and (min-width: 768px) {
@@ -185,6 +198,9 @@ footer .btn {
         margin: 35px;
         padding: 10px;
         position: relative;
+    }
+    header {
+        display: flex;
     }
     header aside {
         display: block;
@@ -213,7 +229,7 @@ footer .btn {
         display: none;
     }
     #menu-content {
-        display: block;
+        display: flex;
         width: auto;
         left: 150px;
         top: 20px;
@@ -230,8 +246,157 @@ footer .btn {
         padding-right: 50px;
         display: block;
     }
+
     section {
         margin: 25px;
     }
+    .slides {
+        background-image: url('./assets/home/tablet/image-hero-paramour.jpg');
+    }
+    
+    .image-overlay h1 {
+        font-size: 60px;
+        width: 400px;
+    }
+    .image-overlay p {
+        width: 550px;
+    }
 
-} 
+    .welcome-desktop {
+        display: block;
+        font-size: 100px !important;
+        color: lightgrey;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    #welcome-section h1 {
+        font-size: 45px;
+    }
+
+    .space {
+        height: 200px;
+    }
+
+    .featured-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .see-all-btn {
+        display: block;
+        height: 75px;
+        font-size: medium;
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 15px 30px;
+    }
+
+    #featured-section-main .btn {
+        display: none;
+    }
+}
+
+/* Desktop CSS */
+@media screen and (min-width: 1200px) {
+    .slides {
+        display: none;
+    }
+    .slides:first-of-type {
+        display: block;
+    }
+        .slide-paramour {
+            background-image: url('./assets/home/desktop/image-hero-paramour.jpg');
+        }
+        .slide-seraph {
+            background-image: url('./assets/home/desktop/image-hero-seraph.jpg');
+        }
+        .slide-federal {
+            background-image: url('./assets/home/desktop/image-hero-federal.jpg');
+        }
+        .slide-trinity {
+            background-image: url('./assets/home/desktop/image-hero-trinity.jpg');
+        }
+
+    #slideshow-container,
+    #welcome-section,
+    #about-us-section,
+    #featured-section-main {
+        margin: 55px;
+    }
+    
+    #slideshow-container .image-overlay {
+        padding: 150px;
+    }
+
+    .dot-container {
+        display: block;
+        position: relative;
+        left: -70px;
+        bottom: 70px;
+    }
+    .dot {
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        margin: 0;
+        background-color: white;
+        display: inline-block;
+        padding: 10px;
+        transition: background-color 0.6s ease;
+    }
+    .dot:hover {
+        background-color: lightgrey;
+    }
+    .active {
+        background-color: black;
+        color: white;
+    }
+
+    #welcome-section {
+        padding-top: 0;
+        padding-left: 0 50px;
+    }
+    .welcome-desktop {
+    display: block;
+    font-size: 175px !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    bottom: -175px;
+    left: -120px;
+    }
+
+    .welcome-desktop-div {
+        display: flex;
+    }
+    .welcome-desktop-div div {
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        z-index: 2;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .feat-projects {
+        width: 325px;
+        height: 450px;
+    }
+    .delsol {
+        background-image: url('./assets/portfolio/desktop/image-del-sol.jpg') !important;
+    }
+    .tower {
+        background-image: url('./assets/portfolio/desktop/image-228b.jpg') !important;
+    }
+    .proto {
+        background-image: url('./assets/portfolio/desktop/image-prototype.jpg') !important;
+    }
+}

@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+h1 {
+    font-size: 35px;
+}
+
 #tell-about {
     margin: 35px;
 }
@@ -15,13 +19,19 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.banner-title {
+    display: none;
+}
 
 #details {
     margin: 35px 50px;
 }
-#details p {
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+#details h1:last-of-type {
+    padding-bottom: 40px;
+}
+#details p:first-of-type {
+    padding-bottom: 15px;
 }
 #details a {
     text-decoration: none;
@@ -99,6 +109,10 @@
     
     .space {
         height: 200px;
+    }
+
+    #details {
+        margin: 35px;
     }
 
     #map-img {
