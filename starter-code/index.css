@@ -16,6 +16,10 @@ p {
     color: white;
 }
 
+.space {
+    height: 75px;
+}
+
 /* header */
 header {
     overflow: hidden;
@@ -90,14 +94,9 @@ header aside {
     height: 100%;
     color: white;
 }
-
 .slides h1 {
     font-weight: bold;
     font-size: 40px;
-}
-.slides .btn {
-
-    /*margin-top: 75px;*/
 }
 
 /* welcome section */
@@ -109,8 +108,11 @@ header aside {
 .welcome-desktop {
     display: none;
 }
-.welcome-section h1 {
-    font-size: 30px;
+.welcome-desktop-div h1 {
+    font-size: 35px;
+}
+.welcome-desktop-div img {
+    display: none;
 }
 
 /* about us section */
@@ -139,19 +141,35 @@ header aside {
 .see-all-btn {
     display: none;
 }
-.feat-projects {
-    width: 100%;
-    height: 250px;
-    margin: auto;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-content: flex-end;
+.see-all-btn a{
+    text-decoration: none;
     color: white;
 }
-.feat-projects p {
-    padding-bottom: 10px;
+.proj-number {
+    display: none;
+}
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.feat-projects {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.feat-projects .image-overlay {
+    padding: 25px;
+    padding-top: 115px;
+}
+.feat-projects .image-overlay p:first-of-type {
+    font-weight: bolder;
+    font-size: large;
+}
+.feat-projects .image-overlay p:last-of-type {
+    font-size: small;
 }
 .feat-projects a {
     text-decoration: none;
@@ -199,6 +217,25 @@ footer .btn {
         padding: 10px;
         position: relative;
     }
+    .subtitle {
+        font-size: 40px;
+    }
+    .space {
+        height: 200px;
+    }
+    #welcome-section .page-break,
+    #welcome-section .space {
+        display: none;
+    }
+    .image-overlay h1 {
+        font-size: 60px;
+        width: 400px;
+    }
+    .image-overlay p {
+        width: 550px;
+    }
+
+    /* header */
     header {
         display: flex;
     }
@@ -224,7 +261,6 @@ footer .btn {
         font-size: 14px;
         letter-spacing: 12px;
     }
-
     #hamburger {
         display: none;
     }
@@ -246,7 +282,6 @@ footer .btn {
         padding-right: 50px;
         display: block;
     }
-
     section {
         margin: 25px;
     }
@@ -254,14 +289,7 @@ footer .btn {
         background-image: url('./assets/home/tablet/image-hero-paramour.jpg');
     }
     
-    .image-overlay h1 {
-        font-size: 60px;
-        width: 400px;
-    }
-    .image-overlay p {
-        width: 550px;
-    }
-
+    /* welcome section */
     .welcome-desktop {
         display: block;
         font-size: 100px !important;
@@ -273,19 +301,19 @@ footer .btn {
         font-size: 45px;
     }
 
-    .space {
-        height: 200px;
+    /* about us section */
+    #about-us-section {
+        background-image: url('./assets/home/tablet/image-small-team.jpg');
+    }
+    #about-us-section .image-overlay h1 {
+        font-size: 45px;
     }
 
+    /* featured projects section */
     .featured-heading {
         display: flex;
         justify-content: space-between;
     }
-
-    .subtitle {
-        font-size: 40px;
-    }
-
     .see-all-btn {
         display: block;
         height: 75px;
@@ -295,7 +323,23 @@ footer .btn {
         color: white;
         padding: 15px 30px;
     }
-
+    .projects-container .image-overlay {
+        display: flex;
+        justify-content: space-between;
+    }
+    .projects-container .image-overlay div {
+        height: fit-content;
+        width: 150px;
+    }
+    .proj-number {
+        display: block;
+        font-size: 225px;
+        margin: 0;
+        position: relative;
+        top: 0;
+        right: 0;
+        opacity: 0.5;
+    }
     #featured-section-main .btn {
         display: none;
     }
@@ -357,20 +401,20 @@ footer .btn {
         color: white;
     }
 
+    /* welcome section */
     #welcome-section {
         padding-top: 0;
         padding-left: 0 50px;
     }
     .welcome-desktop {
-    display: block;
-    font-size: 175px !important;
-    padding-top: 0;
-    padding-bottom: 0;
-    position: relative;
-    bottom: -175px;
-    left: -120px;
+        display: block;
+        font-size: 175px !important;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+        bottom: -175px;
+        left: -120px;
     }
-
     .welcome-desktop-div {
         display: flex;
     }
@@ -380,14 +424,27 @@ footer .btn {
         margin-right: 100px;
         z-index: 2;
     }
+    .welcome-desktop-div img {
+        display: block;
+    }
 
+    /* about us section */
+    #about-us-section .image-overlay {
+        padding-left: 150px;
+    }
+    #about-us-section {
+        background-image: url('./assets/home/desktop/image-small-team.jpg');
+    }
+    
+    /* featured project section*/
     .projects-container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 15px;
     }
     .feat-projects {
-        width: 325px;
+        width: auto;
         height: 450px;
     }
     .delsol {

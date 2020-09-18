@@ -74,7 +74,11 @@ h1 {
         background-image: url('./assets/contact/tablet/image-hero.jpg');
         background-size: contain;
     }
+    .banner .image-overlay {
+        width: 630px;
+    }
     .banner-title {
+        display: block;
         position: absolute;
         font-weight: bold;
         top: -65px;
