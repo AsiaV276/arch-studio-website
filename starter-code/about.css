@@ -13,6 +13,11 @@ h1 {
 .banner-title {
     display: none;
 }
+.subtitle-container {
+    margin-bottom: 35px;
+}
+
+/* main */
 .about-main {
     margin: 35px;
 }
@@ -20,16 +25,18 @@ h1 {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.about-main div {
-    padding-top: 20px;
+
+/* heritage section */
+.heritage-container img {
+    display: none;
+}
+.heritage-container div:last-of-type {
     padding-bottom: 20px;
 }
 
+/* leader section */
 .leader-section {
     margin: 35px;
-}
-.leader-profile {
-    margin-top: 35px;
 }
 .leader-profile img{
     width: 100%;
@@ -58,7 +65,7 @@ h1 {
         background-size: contain;
     }
     .banner .image-overlay {
-        width: 630px;
+        max-width: 630px;
     }
     .banner-title {
         display: block;
@@ -73,11 +80,13 @@ h1 {
         position: relative;
     }
     .banner-box {
+        display: block;
         position: absolute;
         height: 415px;
-        width: 90%;
+        width: 590px;
+        padding: 35px;
         top: -500px;
-        right: -11px;
+        right: -50px;
         background-color: white;
     }
 
@@ -108,5 +117,56 @@ h1 {
 
 /* Desktop CSS */
 @media screen and (min-width: 1200px) {
+    main {
+        max-width: 1250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner {
+        margin-left: 75px;
+    }
+    .about-main .banner-box {
+        width: 600px;
+        padding-left: 100px;
+        left: 450px;
+    }
+    .banner-title {
+        right: 50px;
+        font-size: 150px;
+    }
+
+    /* heritage section */
+    .heritage-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .heritage-container div:first-child {
+        width: 550px;
+    }
+    .heritage-container img {
+        display: block;
+        margin-left: 50px;
+    }
+
+    /* leader section */
+    .leader-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .leader-profile .leader-img {
+        -webkit-filter: brightness(100%);
+    }
+    .leader-profile .leader-img:hover {
+        -webkit-filter: brightness(40%);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .icon-container {
+        display: none;
+    }
+
 
 }

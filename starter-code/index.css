@@ -15,10 +15,14 @@ p {
     text-decoration: none;
     color: white;
 }
-
 .space {
     height: 75px;
 }
+.page-break {
+    width: 100px;
+    margin-bottom: 75px;
+}
+
 
 /* header */
 header {
@@ -31,9 +35,10 @@ header .logo {
 .logo img {
     width: 75px;
 }
-#menu-icon {
+.menu {
     float: right;
-    align-self: center;
+}
+#menu-icon {
     margin-top: 5px;
 }
 #close {
@@ -204,17 +209,14 @@ footer .btn {
     width: 100%;
 }
 
-.page-break {
-    width: 100px;
-    margin-bottom: 75px;
-}
-
 
 /* Tablet CSS */
 @media screen and (min-width: 768px) {
-    body {
+    main {
         margin: 35px;
+        margin-top: 0;
         padding: 10px;
+        padding-left: 40px;
         position: relative;
     }
     .subtitle {
@@ -237,13 +239,20 @@ footer .btn {
 
     /* header */
     header {
-        display: flex;
+        margin: 15px 50px;
+        margin-bottom: 0;
+        padding-left: 50px;
+    }
+    .header-container {
+        width: 85vw;
+        margin: auto;
     }
     header aside {
         display: block;
         position: absolute;
+        margin-top: 25px;
         top: 0;
-        left: 0;
+        left: 50px;
         transform-origin: 0 0;
         transform: rotate(90deg);
     }
@@ -266,9 +275,11 @@ footer .btn {
     }
     #menu-content {
         display: flex;
+        top: 0;
+        /*right: 250px;*/
+        left: 250px;
         width: auto;
-        left: 150px;
-        top: 20px;
+        margin-top: 30px;
     }
     #menu-content ul {
         display: flex;
@@ -280,7 +291,6 @@ footer .btn {
     #menu-content li {
         padding: 15px;
         padding-right: 50px;
-        display: block;
     }
     section {
         margin: 25px;
@@ -342,6 +352,45 @@ footer .btn {
     }
     #featured-section-main .btn {
         display: none;
+    }
+
+    /* footer */
+    footer, .footer-list{
+        display: flex;
+        padding-right: 150px;
+    }
+    footer {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        padding: 0;
+        background-color: white;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .footer-list {
+        margin-right: 125px;
+        width: 100%;
+        text-align: center;
+        list-style-type: none;
+        padding-left: 0;
+        padding: 15px;
+        padding-right: 50px;
+        background-color: lightgray;
+        align-items: center;
+    }
+    .footer-list li {
+        margin: 20px 30px;
+    }
+    footer .btn {
+        width: 200px;
+        padding: 15px;
+        position: absolute;
+        right: 0;
+        z-index: 2;
     }
 }
 
@@ -444,8 +493,8 @@ footer .btn {
         gap: 15px;
     }
     .feat-projects {
-        width: auto;
-        height: 450px;
+        width: 33%;
+        height: auto;
     }
     .delsol {
         background-image: url('./assets/portfolio/desktop/image-del-sol.jpg') !important;

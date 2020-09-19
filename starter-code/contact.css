@@ -22,11 +22,12 @@ h1 {
 .banner-title {
     display: none;
 }
-
+.subtitle-container {
+    margin-bottom: 35px;
+}
 #details {
     margin: 35px 50px;
 }
-
 #details h1:last-of-type {
     padding-bottom: 40px;
 }
@@ -75,7 +76,7 @@ h1 {
         background-size: contain;
     }
     .banner .image-overlay {
-        width: 630px;
+        max-width: 630px;
     }
     .banner-title {
         display: block;
@@ -90,11 +91,13 @@ h1 {
         position: relative;
     }
     .banner-box {
+        display: block;
         position: absolute;
         height: 415px;
-        width: 90%;
+        width: 590px;
+        padding: 35px;
         top: -500px;
-        right: -11px;
+        right: -50px;
         background-color: white;
     }
 
@@ -112,7 +115,7 @@ h1 {
     }
     
     .space {
-        height: 200px;
+        height: 150px;
     }
 
     #details {
@@ -123,4 +126,27 @@ h1 {
         width: 100%;
         height: auto;
     }
+}
+
+/*  Desktop CSS*/
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner {
+        margin-left: 75px;
+    }
+    #tell-about .banner-box {
+        width: 600px;
+        padding-left: 100px;
+        left: 450px;
+    }
+    .banner-title {
+        right: 50px;
+        font-size: 150px;
+    }
+
+
 }
