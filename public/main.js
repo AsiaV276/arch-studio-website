@@ -1,5 +1,3 @@
-
-
 const openMenu = () => {
     const menuContent = document.getElementById('menu-content');
     const closeBtn = document.getElementById('close');
