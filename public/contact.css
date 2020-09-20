@@ -200,5 +200,12 @@ h1 {
     #connect {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+    }
+    #connect #form {
+        width: 100%;
+    }
+    #connect .subtitle-container {
+        margin-right: 225px;
     }
 }
