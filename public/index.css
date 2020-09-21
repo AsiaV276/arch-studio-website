@@ -12,9 +12,13 @@ p {
     color: white;
     padding: 15px 30px;
 }
-.btn a {
-    text-decoration: none;
-    color: white;
+.btn:hover,
+.see-all-btn:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.see-all-btn {
+    display: none;
 }
 .space {
     height: 75px;
@@ -22,6 +26,46 @@ p {
 .page-break {
     width: 100px;
     margin-bottom: 75px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
 }
 
 
@@ -144,13 +188,6 @@ header aside {
 #featured-section-main h1 {
     padding-bottom: 50px;
 }
-.see-all-btn {
-    display: none;
-}
-.see-all-btn a{
-    text-decoration: none;
-    color: white;
-}
 .proj-number {
     display: none;
 }
@@ -163,12 +200,11 @@ header aside {
 }
 .feat-projects {
     width: 100%;
-    height: 100%;
     color: white;
 }
 .feat-projects .image-overlay {
     padding: 25px;
-    padding-top: 115px;
+    height: 200px;
 }
 .feat-projects .image-overlay p:first-of-type {
     font-weight: bolder;
@@ -224,7 +260,7 @@ footer .btn {
         font-size: 40px;
     }
     .space {
-        height: 200px;
+        height: 150px;
     }
     #welcome-section .page-break,
     #welcome-section .space {
@@ -256,11 +292,13 @@ footer .btn {
         left: 50px;
         transform-origin: 0 0;
         transform: rotate(90deg);
+        color: lightgrey;
     }
     header hr {
         position: absolute;
         left: -35px;
         width: 100px;
+        border-top: 1px solid lightgrey;
     }
     header p {
         width: 200px;
@@ -325,6 +363,9 @@ footer .btn {
         display: flex;
         justify-content: space-between;
     }
+    .featured-heading a {
+        text-decoration: none;
+    }
     .see-all-btn {
         display: block;
         height: 75px;
@@ -335,20 +376,14 @@ footer .btn {
         padding: 15px 30px;
     }
     .projects-container .image-overlay {
-        display: flex;
         justify-content: space-between;
     }
-    .projects-container .image-overlay div {
-        height: fit-content;
-        width: 150px;
+    .feat-projects .image-overlay {
+        height: 250px;
     }
     .proj-number {
         display: block;
         font-size: 225px;
-        margin: 0;
-        position: relative;
-        top: 0;
-        right: 0;
         opacity: 0.5;
     }
     #featured-section-main .btn {
@@ -391,6 +426,7 @@ footer .btn {
         padding: 15px;
         position: absolute;
         right: 0;
+        top: 35px;
         z-index: 2;
     }
 }
@@ -425,6 +461,9 @@ footer .btn {
     
     #slideshow-container .image-overlay {
         padding: 150px;
+    }
+    #slideshow-container .image-overlay div{
+        height: 300px;
     }
 
     .dot-container {
@@ -496,6 +535,9 @@ footer .btn {
     .feat-projects {
         width: 33%;
         height: auto;
+    }
+    .feat-projects .image-overlay {
+        height: 350px;
     }
     .delsol {
         background-image: url('./assets/portfolio/desktop/image-del-sol.jpg') !important;
