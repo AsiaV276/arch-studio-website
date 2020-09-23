@@ -11,7 +11,6 @@
 h1 {
     font-size: 35px;
 }
-
 #tell-about {
     margin: 35px;
 }
@@ -28,7 +27,7 @@ h1 {
 
 /* contact details */
 #details {
-    margin: 35px 50px;
+    margin: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,6 +51,9 @@ h1 {
 .office-details div:first-of-type {
     margin-bottom: 15px;
 }
+.office-details div:last-of-type span a{
+    display: flex;
+}
 .mail {
     padding-right: 55px;
 }
@@ -60,6 +62,17 @@ h1 {
 }
 .phone {
     padding-right: 40px;
+}
+.view-map {
+    padding: 0;
+}
+.view-map:hover {
+    text-decoration: underline;
+}
+.view-map-arrow {
+    height: fit-content;
+    padding-top: 3px;
+    padding-left: 10px;
 }
 
 
@@ -70,14 +83,47 @@ h1 {
     position: relative;
     margin-bottom: 200px;
 }
+#name-err,
+#email-err,
+#message-err {
+    display: none;
+    color: red;
+    width: 100%;
+}
+#name-err p,
+#email-err p,
+#message-err p {
+    position: relative;
+    float: right;
+    top: -30px;
+    width: fit-content;
+    font-size: 12px;
+}
 #form input, textarea{
     border: none;
     padding: 20px;
     border-bottom: 1px solid black;
 }
+#form #name-span-filler,
+#form #email-span-filler,
+#form #message-span-filler {
+    height: 30px;
+}
 #form input:focus,
 #form textarea:focus {
-    border-bottom: 2px solid black;
+    outline: none;
+    border-bottom: 2px solid;
+}
+.placeholder-err::-webkit-input-placeholder {
+    color: red;
+}
+#form .border-err,
+#form .border-err:focus {
+    border-color: red;
+}
+#form input:focus::placeholder, 
+#form textarea:focus::placeholder {
+    font-weight: bold;
 }
 
 #form button {
@@ -101,10 +147,6 @@ h1 {
 }
 
 /* map */
-#map-img {
-    width: auto;
-    height: 200px;
-}
 #mapid {
     height: 400px;
 }
@@ -162,7 +204,7 @@ h1 {
 
     /* contact details */
     #details {
-        margin: 35px;
+        margin: 50px;
     }
     .office-details {
         flex-direction: row;
@@ -172,9 +214,14 @@ h1 {
         margin-bottom: auto;
     }
 
-    #map-img {
-        width: 100px;
-        height: auto;
+    /* map */
+    #mapid {
+        margin: 50px;
+    }
+    /* connect */
+    #connect {
+        margin: 50px;
+        margin-top: 75px;
     }
 }
 
@@ -182,11 +229,9 @@ h1 {
 @media screen and (min-width: 1200px) {
     main {
         max-width: 1250px;
+        padding-left: 50px;
         margin-left: auto;
         margin-right: auto;
-    }
-    .banner {
-        margin-left: 75px;
     }
     #tell-about .banner-box {
         width: 600px;

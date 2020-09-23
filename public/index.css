@@ -26,6 +26,7 @@ p {
 .page-break {
     width: 100px;
     margin-bottom: 75px;
+    margin-left: 50px;
 }
 
 /* Animation */
@@ -250,10 +251,8 @@ footer .btn {
 /* Tablet CSS */
 @media screen and (min-width: 768px) {
     main {
-        margin: 35px;
+        margin: 50px;
         margin-top: 0;
-        padding: 10px;
-        padding-left: 40px;
         position: relative;
     }
     .subtitle {
@@ -332,7 +331,7 @@ footer .btn {
         padding-right: 50px;
     }
     section {
-        margin: 25px;
+        margin: 50px;
     }
     .slides {
         background-image: url('./assets/home/tablet/image-hero-paramour.jpg');

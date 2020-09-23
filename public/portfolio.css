@@ -67,6 +67,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        margin: 50px;
     }
         
     .seraph {
@@ -111,6 +112,8 @@
 @media screen and (min-width: 1200px) {
     #project-section {
         justify-content: center;
+        margin-left: 0;
+        padding-left: 50px;
     }
     #project-section .feat-projects {
         width: 325px;

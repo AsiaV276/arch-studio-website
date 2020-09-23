@@ -21,6 +21,9 @@ h1 {
 .about-main {
     margin: 35px;
 }
+.about-main .page-break {
+    margin-left: 0;
+}
 .banner-box p {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -57,7 +60,6 @@ h1 {
 
  /* Tablet */
 @media screen and (min-width: 768px) {
-    
     .banner {
         width: auto;
         height: 790px;
@@ -78,6 +80,7 @@ h1 {
     }
     .about-main {
         position: relative;
+        margin: 50px;
     }
     .banner-box {
         display: block;
@@ -119,11 +122,9 @@ h1 {
 @media screen and (min-width: 1200px) {
     main {
         max-width: 1250px;
+        padding-left: 50px;
         margin-left: auto;
         margin-right: auto;
-    }
-    .banner {
-        margin-left: 75px;
     }
     .about-main .banner-box {
         width: 600px;
@@ -152,6 +153,7 @@ h1 {
     .leader-section {
         display: flex;
         justify-content: space-between;
+        margin: 50px;
     }
     .leader-profile .leader-img {
         -webkit-filter: brightness(100%);
