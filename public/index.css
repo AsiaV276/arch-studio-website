@@ -10,12 +10,18 @@ p {
     border: none;
     background-color: black;
     color: white;
-    padding: 15px 30px;
+    padding: 20px 30px;
 }
 .btn:hover,
 .see-all-btn:hover {
     background-color: gray;
     cursor: pointer;
+}
+.btn img, 
+.see-all-btn img {
+    vertical-align: middle;
+    margin-left: 20px;
+    padding-bottom: 4px;
 }
 .see-all-btn {
     display: none;
@@ -58,17 +64,14 @@ p {
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: both
 }
-
 .animatedFadeInUp {
     opacity: 0
 }
-
 .fadeInUp {
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
 }
-
 
 /* header */
 header {
@@ -250,6 +253,9 @@ footer .btn {
 
 /* Tablet CSS */
 @media screen and (min-width: 768px) {
+    .logo img {
+        width: 100px;
+    }
     main {
         margin: 50px;
         margin-top: 0;
@@ -276,7 +282,6 @@ footer .btn {
     /* header */
     header {
         margin: 15px 50px;
-        margin-bottom: 0;
         padding-left: 50px;
     }
     .header-container {
@@ -314,7 +319,6 @@ footer .btn {
     #menu-content {
         display: flex;
         top: 0;
-        /*right: 250px;*/
         left: 250px;
         width: auto;
         margin-top: 30px;
@@ -332,6 +336,7 @@ footer .btn {
     }
     section {
         margin: 50px;
+        margin-top: 0;
     }
     .slides {
         background-image: url('./assets/home/tablet/image-hero-paramour.jpg');
@@ -344,6 +349,9 @@ footer .btn {
         color: lightgrey;
         padding-top: 30px;
         padding-bottom: 50px;
+    }
+    #welcome-section {
+        margin: 50px;
     }
     #welcome-section h1 {
         font-size: 45px;
@@ -384,6 +392,8 @@ footer .btn {
         display: block;
         font-size: 225px;
         opacity: 0.5;
+        position: relative;
+        bottom: -90px;
     }
     #featured-section-main .btn {
         display: none;
@@ -412,7 +422,8 @@ footer .btn {
         text-align: center;
         list-style-type: none;
         padding-left: 0;
-        padding: 15px;
+        padding: 50px;
+        padding-left: 15px;
         padding-right: 50px;
         background-color: lightgray;
         align-items: center;
@@ -425,13 +436,20 @@ footer .btn {
         padding: 15px;
         position: absolute;
         right: 0;
-        top: 35px;
+        top: 65px;
         z-index: 2;
     }
 }
 
 /* Desktop CSS */
 @media screen and (min-width: 1200px) {
+    header {
+        padding-left: 65px;
+    }
+    section {
+        margin: 65px;
+        margin-top: 0;
+    }
     .slides {
         display: none;
     }
@@ -456,29 +474,38 @@ footer .btn {
     #about-us-section,
     #featured-section-main {
         margin: 55px;
+        margin-left: 65px;
     }
-    
+    #slideshow-container {
+        margin-top: 0;
+    }
     #slideshow-container .image-overlay {
         padding: 150px;
     }
-    #slideshow-container .image-overlay div{
-        height: 300px;
-    }
-
-    .dot-container {
-        display: block;
+    #slideshow-container .image-overlay div {
         position: relative;
-        left: -70px;
-        bottom: 70px;
+        height: 400px;
+    }
+    #slideshow-container .image-overlay div .btn{
+        position: absolute;
+        bottom: 50px;
+    }
+    .dot-container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: -65px;
+        bottom: 65px;
     }
     .dot {
         cursor: pointer;
-        height: 50px;
-        width: 50px;
+        height: 65px;
+        width: 65px;
         margin: 0;
         background-color: white;
-        display: inline-block;
-        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transition: background-color 0.6s ease;
     }
     .dot:hover {
@@ -536,7 +563,15 @@ footer .btn {
         height: auto;
     }
     .feat-projects .image-overlay {
-        height: 350px;
+        height: 450px;
+        display: flex;
+    }
+    .proj-number {
+        align-self: flex-start;
+        position: relative;
+        top: 50px;
+        right: -35px;
+        font-size: 150px;
     }
     .delsol {
         background-image: url('./assets/portfolio/desktop/image-del-sol.jpg') !important;
