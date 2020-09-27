@@ -23,6 +23,9 @@ p {
     margin-left: 20px;
     padding-bottom: 4px;
 }
+.btn img g{
+    stroke: rgb(225, 225, 225);
+}
 .see-all-btn {
     display: none;
 }
@@ -32,7 +35,6 @@ p {
 .page-break {
     width: 100px;
     margin-bottom: 75px;
-    margin-left: 50px;
 }
 
 /* Animation */
@@ -89,6 +91,7 @@ header .logo {
 }
 #menu-icon {
     margin-top: 5px;
+    cursor: pointer;
 }
 #close {
     display: none;
@@ -156,7 +159,7 @@ header aside {
 /* welcome section */
 #welcome-section {
     padding-top: 50px;
-    margin: 25px;
+    margin: 35px;
     padding-bottom: 50px;
 }
 .welcome-desktop {
@@ -366,6 +369,9 @@ footer .btn {
     }
 
     /* featured projects section */
+    #featured-section-main {
+        margin: 50px;
+    }
     .featured-heading {
         display: flex;
         justify-content: space-between;
@@ -519,7 +525,7 @@ footer .btn {
     /* welcome section */
     #welcome-section {
         padding-top: 0;
-        padding-left: 0 50px;
+        padding-left: 50px;
     }
     .welcome-desktop {
         display: block;
