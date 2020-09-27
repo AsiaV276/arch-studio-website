@@ -132,8 +132,9 @@ h1 {
     border: none;
     position: absolute;
     right: 0;
-    bottom: -75px;
+    bottom: -45px;
     cursor: pointer;
+    background-color: black;
 }
 #form button:hover {
     background-color: lightgray;
