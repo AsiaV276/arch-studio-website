@@ -156,6 +156,7 @@ h1 {
 /* map */
 #mapid {
     height: 400px;
+    z-index: 0;
 }
 
 
