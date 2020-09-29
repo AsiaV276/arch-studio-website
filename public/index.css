@@ -76,21 +76,32 @@ p {
 }
 
 /* header */
-header {
+
+.header-container {
     overflow: hidden;
+    position: fixed;
+    background-color: white;
+    width: 100%;
     padding: 20px;
-}
-header .logo {
-    float: left;
+    padding-left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    height: 50px;
 }
 .logo img {
     width: 75px;
+    margin: 10px;
 }
 .menu {
+    position: relative;
+    right: 0;
     float: right;
+    margin: 10px;
 }
 #menu-icon {
-    margin-top: 5px;
     cursor: pointer;
 }
 #close {
@@ -99,30 +110,41 @@ header .logo {
 #hamburger {
     display: block;
 }
-#menu-content {
+#header-menu-content {
     display: none;
-    position: absolute;
-    top: 75px;
-    right: 0;
+}
+#dropdown-menu-content {
+    display: none;
+    position: fixed;
     z-index: 1;
-    background-color: white;
-    width: 90%;
+    background-color: rgba(0,0,0,0.70);
+    width: 100vw;
+    height: 100vh;
 }
-#menu-content ul {
+#dropdown-menu-content ul {
     list-style: none;
-    margin-left: 0;
-    margin: 40px;
-    padding-left: 0;
+    background-color: whitesmoke;
+    float: right;
+    padding: 40px;
+    padding-top: 20px;
+    width: 75%;
 }
-#menu-content li {
-    padding-bottom: 20px;
+#dropdown-menu-content li {
+    margin-top: 40px;
+    width: fit-content;
 }
-#menu-content a {
+#dropdown-menu-content a {
     text-decoration: none;
     color: black;
 }
+#header-content {
+    display: none;
+}
 header aside {
     display: none;
+}
+main {
+    margin-top: 90px;
 }
 
 /* Slideshow banner*/
@@ -130,6 +152,7 @@ header aside {
     display: none;
 }
 .slides:first-of-type {
+    z-index: -1;
     display: block;
     position: relative;
 }
@@ -235,15 +258,29 @@ header aside {
 footer {
     margin-top: 100px;
     padding: 50px;
-    background-color: lightgray;
+    background-color: whitesmoke;
+    filter: brightness(95%);
 }
 .footer-list {
     text-align: center;
     list-style-type: none;
     padding-left: 0;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    position: relative;
 }
 .footer-list li {
-    margin: 20px;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+.footer-list li:first-of-type {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -120px;
+    background-color: black;
+    padding: 40px 25px;
 }
 .footer-list a {
     text-decoration: none;
@@ -251,13 +288,40 @@ footer {
 }
 footer .btn {
     width: 100%;
+    position: relative;
 }
 
 
 /* Tablet CSS */
 @media screen and (min-width: 768px) {
+    .header-container {
+        position: relative;
+    }
+    #menu-icon {
+        display: none;
+    }
+    #dropdown-menu-content {
+        display: none;
+    }
     .logo img {
         width: 100px;
+    }
+    #header-menu-content {
+        display: block;
+    }
+    #header-menu-content ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: left;
+        padding-left: 0;
+    }
+    #header-menu-content li {
+        margin-right: 100px;
+    }
+    #header-menu-content a {
+        text-decoration: none;
+        color: black;
     }
     main {
         margin: 50px;
@@ -417,32 +481,45 @@ footer .btn {
         margin-top: 100px;
         padding: 0;
         background-color: white;
+        filter: brightness(100%);
         align-items: center;
         display: flex;
         justify-content: space-between;
         position: relative;
     }
     .footer-list {
-        margin-right: 125px;
+        margin-right: 100px;
         width: 100%;
         text-align: center;
         list-style-type: none;
-        padding-left: 0;
-        padding: 50px;
-        padding-left: 15px;
-        padding-right: 50px;
-        background-color: lightgray;
+        padding: 0;
+        padding-right: 150px;
+        background-color:whitesmoke;
+        filter: brightness(95%);
         align-items: center;
     }
     .footer-list li {
-        margin: 20px 30px;
+        width: 100%;
+        margin: auto;
+    }
+    .footer-list li:first-of-type {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: black;
+        margin: 0;
+    }
+    .footer-list .logo {
+        height: 100%;
+        width: 200px;
     }
     footer .btn {
         width: 200px;
         padding: 15px;
         position: absolute;
         right: 0;
-        top: 65px;
+        top: 50px;
         z-index: 2;
     }
 }

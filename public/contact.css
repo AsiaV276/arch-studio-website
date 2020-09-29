@@ -7,7 +7,13 @@
 .banner .image-overlay {
     padding: 0;
 }
-
+.banner-white-space {
+    width: 90%;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    top: -50px;
+}
 h1 {
     font-size: 35px;
 }

@@ -12,28 +12,34 @@
   
   <title>Frontend Mentor | Arch Studio Website Challenge</title>
 </head>
-<body>
 
+<body>
   <header>
     <div class="header-container">
       <div class="logo">
         <a href="./index.html"><img src="./assets/logo.svg" alt=""></a>
       </div>
+      <nav id="header-menu-content">
+        <ul>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
       <div class="menu">
         <div id="menu-icon" onclick="openMenu()">
           <img src="./assets/icons/icon-hamburger.svg" alt="" id="hamburger">
           <img src="./assets/icons/icon-close.svg" alt="" id="close">
         </div>
-        <nav id="menu-content">
-          <ul>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
       </div>
     </div>
-
+    <nav id="dropdown-menu-content">
+      <ul>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
     <aside><hr><p>About Us</p></aside>
   </header>
 
@@ -41,6 +47,7 @@
 
   <section class="banner">
     <div class="image-overlay"></div>
+    <div class="banner-white-space"></div>
   </section>
 
   <section class="about-main">
@@ -85,7 +92,7 @@
     </div>
     <div class="leader-grid">
       <div class="leader-profile">
-        <img src="./assets/about/desktop/avatar-jake.jpg" alt="" class="leader-img">
+        <img src="./assets/about/desktop/avatar-jake.jpg" alt="">
         <p>Jake Richards</p>
         <p class="job-title">Chief Architect</p>
         <div class="icon-container">
@@ -94,7 +101,7 @@
         </div>
       </div>
       <div class="leader-profile">
-        <img src="./assets/about/desktop/avatar-thompson.jpg" alt="" class="leader-img">
+        <img src="./assets/about/desktop/avatar-thompson.jpg" alt="">
         <p>Thompson Smith</p>
         <p class="job-title">Head of Finance</p>
         <div class="icon-container">
@@ -103,7 +110,7 @@
         </div>
       </div>
       <div class="leader-profile">
-        <img src="./assets/about/desktop/avatar-jackson.jpg" alt="" class="leader-img">
+        <img src="./assets/about/desktop/avatar-jackson.jpg" alt="">
         <p>Jackson Rourke</p>
         <p class="job-title">Lead Designer</p>
         <div class="icon-container">
@@ -112,7 +119,7 @@
         </div>
       </div>
       <div class="leader-profile">
-        <img src="./assets/about/desktop/avatar-maria.jpg" alt="" class="leader-img">
+        <img src="./assets/about/desktop/avatar-maria.jpg" alt="">
         <p>Maria Simpson</p>
         <p class="job-title">Senior Architect</p>
         <div class="icon-container">
@@ -127,7 +134,7 @@
 
   <footer>
     <ul class="footer-list">
-      <li><a href="./index.html"><img src="./assets/logo.svg" alt=""></a></li>
+      <li class="logo"><a href="./index.html"><img src="./assets/logo-w.svg" alt=""></a></li>
       <li><a href="./portfolio.html">Portfolio</a></li>
       <li><a href="./about.html">About Us</a></li>
       <li><a href="./contact.html">Contact</a></li>
