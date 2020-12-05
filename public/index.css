@@ -449,7 +449,7 @@ footer .btn {
     }
     .see-all-btn {
         display: block;
-        height: 75px;
+        height: fit-content;
         font-size: medium;
         border: none;
         background-color: black;
