@@ -247,15 +247,19 @@ main {
 .feat-projects .image-overlay p:last-of-type {
     font-size: small;
 }
-.feat-projects a {
+.feat-projects a,
+#featured-section-main a {
     text-decoration: none;
 }
 #featured-section-main .btn {
-    width: 100%;
+    text-align: center;
 }
 .view-project-link {
     text-decoration: none;
     color: white;
+}
+.view-project-link:hover {
+    color: lightgray;
 }
 
 /* footer */
@@ -264,6 +268,7 @@ footer {
     padding: 50px;
     background-color: whitesmoke;
     filter: brightness(95%);
+    text-align: center;
 }
 .footer-list {
     text-align: center;
@@ -291,7 +296,7 @@ footer {
     color: black;
 }
 footer .btn {
-    width: 100%;
+    width: fit-content;
     position: relative;
 }
 
