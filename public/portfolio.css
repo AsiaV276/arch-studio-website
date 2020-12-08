@@ -1,162 +1,193 @@
 * {
-    font-family: Spartan;
+  font-family: Spartan;
 }
 
-#project-section {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin: 25px;
-}
-.project-img {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.feat-projects {
-    height: 100%;
-}
-.feat-projects p {
-    width: auto;
-}
-.feat-projects .image-overlay {
-    display: flex;
-    align-items: flex-end;
+main #project-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  margin: 25px;
 }
 
-.seraph {
-    background-image: url('./assets/portfolio/mobile/image-seraph.jpg');
+main #project-section .project-img {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.eebox {
-    background-image: url('./assets/portfolio/mobile/image-eebox.jpg');
+
+main #project-section .feat-projects {
+  height: 100%;
 }
-.federal {
-    background-image: url('./assets/portfolio/mobile/image-federal.jpg');
+
+main #project-section .feat-projects p {
+  width: auto;
 }
-.delsol {
-    background-image: url('./assets/portfolio/mobile/image-del-sol.jpg');
+
+main #project-section .feat-projects .image-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-.proto {
-    background-image: url('./assets/portfolio/mobile/image-prototype.jpg');
+
+main #project-section .seraph {
+  background-image: url("./assets/portfolio/mobile/image-seraph.jpg");
 }
-.tower {
-    background-image: url('./assets/portfolio/mobile/image-228b.jpg');
+
+main #project-section .eebox {
+  background-image: url("./assets/portfolio/mobile/image-eebox.jpg");
 }
-.edelweiss {
-    background-image: url('./assets/portfolio/mobile/image-edelweiss.jpg');
+
+main #project-section .federal {
+  background-image: url("./assets/portfolio/mobile/image-federal.jpg");
 }
-.netcry {
-    background-image: url('./assets/portfolio/mobile/image-netcry.jpg');
+
+main #project-section .delsol {
+  background-image: url("./assets/portfolio/mobile/image-del-sol.jpg");
 }
-.hypers {
-    background-image: url('./assets/portfolio/mobile/image-hypers.jpg');
+
+main #project-section .proto {
+  background-image: url("./assets/portfolio/mobile/image-prototype.jpg");
 }
-.sxiv {
-    background-image: url('./assets/portfolio/mobile/image-sxiv.jpg');
+
+main #project-section .tower {
+  background-image: url("./assets/portfolio/mobile/image-228b.jpg");
 }
-.trinity {
-    background-image: url('./assets/portfolio/mobile/image-trinity.jpg');
+
+main #project-section .edelweiss {
+  background-image: url("./assets/portfolio/mobile/image-edelweiss.jpg");
 }
-.paramour {
-    background-image: url('./assets/portfolio/mobile/image-paramour.jpg');
+
+main #project-section .netcry {
+  background-image: url("./assets/portfolio/mobile/image-netcry.jpg");
+}
+
+main #project-section .hypers {
+  background-image: url("./assets/portfolio/mobile/image-hypers.jpg");
+}
+
+main #project-section .sxiv {
+  background-image: url("./assets/portfolio/mobile/image-sxiv.jpg");
+}
+
+main #project-section .trinity {
+  background-image: url("./assets/portfolio/mobile/image-trinity.jpg");
+}
+
+main #project-section .paramour {
+  background-image: url("./assets/portfolio/mobile/image-paramour.jpg");
 }
 
 /* Tablet CSS */
 @media screen and (min-width: 768px) {
-    #project-section {
-        display: flex;
+  main #project-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        flex-direction: row;
-        margin: 50px;
-    }
-        
-    .seraph {
-        background-image: url('./assets/portfolio/tablet/image-seraph.jpg');
-    }
-    .eebox {
-        background-image: url('./assets/portfolio/tablet/image-eebox.jpg');
-    }
-    .federal {
-        background-image: url('./assets/portfolio/tablet/image-federal.jpg');
-    }
-    .delsol {
-        background-image: url('./assets/portfolio/tablet/image-del-sol.jpg');
-    }
-    .proto {
-        background-image: url('./assets/portfolio/tablet/image-prototype.jpg');
-    }
-    .tower {
-        background-image: url('./assets/portfolio/tablet/image-228b.jpg');
-    }
-    .edelweiss {
-        background-image: url('./assets/portfolio/tablet/image-edelweiss.jpg');
-    }
-    .netcry {
-        background-image: url('./assets/portfolio/tablet/image-netcry.jpg');
-    }
-    .hypers {
-        background-image: url('./assets/portfolio/tablet/image-hypers.jpg');
-    }
-    .sxiv {
-        background-image: url('./assets/portfolio/tablet/image-sxiv.jpg');
-    }
-    .trinity {
-        background-image: url('./assets/portfolio/tablet/image-trinity.jpg');
-    }
-    .paramour {
-        background-image: url('./assets/portfolio/tablet/image-paramour.jpg');
-    }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 50px;
+  }
+  main #project-section .seraph {
+    background-image: url("./assets/portfolio/tablet/image-seraph.jpg");
+  }
+  main #project-section .eebox {
+    background-image: url("./assets/portfolio/tablet/image-eebox.jpg");
+  }
+  main #project-section .federal {
+    background-image: url("./assets/portfolio/tablet/image-federal.jpg");
+  }
+  main #project-section .delsol {
+    background-image: url("./assets/portfolio/tablet/image-del-sol.jpg");
+  }
+  main #project-section .proto {
+    background-image: url("./assets/portfolio/tablet/image-prototype.jpg");
+  }
+  main #project-section .tower {
+    background-image: url("./assets/portfolio/tablet/image-228b.jpg");
+  }
+  main #project-section .edelweiss {
+    background-image: url("./assets/portfolio/tablet/image-edelweiss.jpg");
+  }
+  main #project-section .netcry {
+    background-image: url("./assets/portfolio/tablet/image-netcry.jpg");
+  }
+  main #project-section .hypers {
+    background-image: url("./assets/portfolio/tablet/image-hypers.jpg");
+  }
+  main #project-section .sxiv {
+    background-image: url("./assets/portfolio/tablet/image-sxiv.jpg");
+  }
+  main #project-section .trinity {
+    background-image: url("./assets/portfolio/tablet/image-trinity.jpg");
+  }
+  main #project-section .paramour {
+    background-image: url("./assets/portfolio/tablet/image-paramour.jpg");
+  }
 }
 
 /*  Desktop CSS */
 @media screen and (min-width: 1200px) {
-    #project-section {
-        justify-content: center;
-        margin-left: 0;
-        padding-left: 50px;
-    }
-    #project-section .feat-projects {
-        width: 325px;
-        height: 500px;
-    }
-    #project-section .feat-projects .image-overlay {
-        padding: 25px;
-        height: 450px;
-    }
-    .seraph {
-        background-image: url('./assets/portfolio/desktop/image-seraph.jpg');
-    }
-    .eebox {
-        background-image: url('./assets/portfolio/desktop/image-eebox.jpg');
-    }
-    .federal {
-        background-image: url('./assets/portfolio/desktop/image-federal.jpg');
-    }
-    .delsol {
-        background-image: url('./assets/portfolio/desktop/image-del-sol.jpg');
-    }
-    .proto {
-        background-image: url('./assets/portfolio/desktop/image-prototype.jpg');
-    }
-    .tower {
-        background-image: url('./assets/portfolio/desktop/image-228b.jpg');
-    }
-    .edelweiss {
-        background-image: url('./assets/portfolio/desktop/image-edelweiss.jpg');
-    }
-    .netcry {
-        background-image: url('./assets/portfolio/desktop/image-netcry.jpg');
-    }
-    .hypers {
-        background-image: url('./assets/portfolio/desktop/image-hypers.jpg');
-    }
-    .sxiv {
-        background-image: url('./assets/portfolio/desktop/image-sxiv.jpg');
-    }
-    .trinity {
-        background-image: url('./assets/portfolio/desktop/image-trinity.jpg');
-    }
-    .paramour {
-        background-image: url('./assets/portfolio/desktop/image-paramour.jpg');
-    }
+  main #project-section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+    padding-left: 50px;
+  }
+  main #project-section .feat-projects {
+    width: 325px;
+    height: 500px;
+  }
+  main #project-section .feat-projects .image-overlay {
+    padding: 25px;
+    height: 450px;
+  }
+  main #project-section .seraph {
+    background-image: url("./assets/portfolio/desktop/image-seraph.jpg");
+  }
+  main #project-section .eebox {
+    background-image: url("./assets/portfolio/desktop/image-eebox.jpg");
+  }
+  main #project-section .federal {
+    background-image: url("./assets/portfolio/desktop/image-federal.jpg");
+  }
+  main #project-section .delsol {
+    background-image: url("./assets/portfolio/desktop/image-del-sol.jpg");
+  }
+  main #project-section .proto {
+    background-image: url("./assets/portfolio/desktop/image-prototype.jpg");
+  }
+  main #project-section .tower {
+    background-image: url("./assets/portfolio/desktop/image-228b.jpg");
+  }
+  main #project-section .edelweiss {
+    background-image: url("./assets/portfolio/desktop/image-edelweiss.jpg");
+  }
+  main #project-section .netcry {
+    background-image: url("./assets/portfolio/desktop/image-netcry.jpg");
+  }
+  main #project-section .hypers {
+    background-image: url("./assets/portfolio/desktop/image-hypers.jpg");
+  }
+  main #project-section .sxiv {
+    background-image: url("./assets/portfolio/desktop/image-sxiv.jpg");
+  }
+  main #project-section .trinity {
+    background-image: url("./assets/portfolio/desktop/image-trinity.jpg");
+  }
+  main #project-section .paramour {
+    background-image: url("./assets/portfolio/desktop/image-paramour.jpg");
+  }
 }
+/*# sourceMappingURL=portfolio.css.map */

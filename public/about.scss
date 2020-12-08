@@ -1,0 +1,248 @@
+main {
+    .banner {
+        height: 250px;
+        background-image: url('./assets/about/mobile/image-hero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        .image-overlay {
+            padding: 0;
+        }
+        .banner-white-space {
+            width: 90%;
+            height: 50px;
+            background-color: white;
+            position: relative;
+            top: -50px;
+        }
+    }
+    /* main */
+    .about-main {
+        margin: 35px;
+        .banner-box {
+            p {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            .banner-title {
+                display: none;
+            }
+        }
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .subtitle-container {
+        margin-bottom: 35px;
+    }
+    /* heritage section */
+    .heritage-container {
+        img {
+            display: none;
+        }
+        div:last-of-type {
+            padding-bottom: 20px;
+        }
+    }
+
+    /* leader section */
+    .leader-section {
+        margin: 35px;
+    }
+    .leader-profile {
+        width: 100%;
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 25px;
+        }
+    }
+    .leader-grid {
+        width: fit-content;
+        margin: auto;
+    }
+    .job-title {
+        font-size: small;
+        font-weight: lighter;
+    }
+
+    .icon {
+        width: 25px !important;
+        height: auto;
+        margin-right: 10px;
+    }
+    .linkedin {
+        width: 25px !important;
+        height: auto;
+        margin-right: 10px;
+        content: url('./assets/icons/icon-linkedin.svg');
+    }
+    .twitter {
+        width: 25px !important;
+        height: auto;
+        margin-right: 10px;
+        content: url('./assets/icons/icon-twitter.svg');
+    }
+}
+
+
+
+
+ /* Tablet */
+@media screen and (min-width: 768px) {
+    main {
+        .banner {
+            width: auto;
+            height: 790px;
+            background-image: url('./assets/about/tablet/image-hero.jpg');
+            background-size: contain;
+            .image-overlay {
+                max-width: 630px;
+            }
+        }
+        .about-main {
+            position: relative;
+            margin: 50px;
+            .banner-box {
+                padding-left: 15px;
+                padding-top: 50px;
+                padding-bottom: 0;
+                display: block;
+                position: absolute;
+                height: 415px;
+                width: 590px;
+                //padding: 35px;
+                top: -500px;
+                right: -50px;
+                background-color: white;
+                h1 {
+                    font-size: 50px;
+                    padding: 50px;
+                }
+                p {
+                    padding-left: 50px;
+                }
+                .banner-title {
+                    display: block;
+                    position: absolute;
+                    font-weight: bold;
+                    top: -65px;
+                    right: 0;
+                    font-size: 100px;
+                    color: lightgray;
+                }
+            }
+        }
+        
+        .space {
+            height: 150px;
+        }
+        
+        /* leader section */
+        .leader-section {
+            display: flex;
+            flex-direction: column;
+        }
+        .leader-profile {
+            width: 100%;
+        }
+        .leader-grid {
+            display: grid;
+            grid-template-columns: 350px 350px;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            width: fit-content;
+            margin: auto;
+        }
+    }
+}
+
+/* Desktop CSS */
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1250px;
+        padding-left: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .about-main {
+            .banner-box {
+                width: 600px;
+                padding-left: 100px;
+                left: 450px;
+                .banner-title {
+                    right: 50px;
+                    font-size: 150px;
+                }
+            }
+        }
+        
+    
+        /* heritage section */
+        .heritage-container {
+            display: flex;
+            justify-content: space-between;
+            div:first-child {
+                width: 550px;
+            }
+            img {
+                display: block;
+                margin-left: 50px;
+            }
+        }
+        
+        /* leader section */
+        .leader-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 50px;
+        }
+        .leader-profile {
+            position: relative;
+            img {
+                margin-bottom: 15px;
+            }
+        }
+        .leader-grid {
+            grid-template-columns: 300px 300px;
+            width: fit-content;
+            margin: 0;
+        }
+        .icon-container {
+            width: 100%;
+            height: 274px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 0;
+            a {
+                align-self: center;
+                height: fit-content;
+            }
+        }
+        .icon-container:hover {
+            opacity: 100%;
+        }
+        .icon-container:hover + a {
+            opacity: 100%;
+            margin: 0;
+        }
+        .linkedin {
+            content: url('./assets/icons/icon-linkedin-w.svg');
+            margin-bottom: 0 !important;
+        }
+        .twitter {
+            content: url('./assets/icons/icon-twitter-w.svg');
+            margin-bottom: 0 !important;
+        }
+        .job-title {
+            margin-bottom: 50px;
+        }
+    }
+    
+}

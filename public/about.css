@@ -1,237 +1,283 @@
-.banner {
-    height: 250px;
-    background-image: url('./assets/about/mobile/image-hero.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+main {
+  /* main */
+  /* heritage section */
+  /* leader section */
 }
-.banner .image-overlay {
-    padding: 0;
+
+main .banner {
+  height: 250px;
+  background-image: url("./assets/about/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.banner-white-space {
-    width: 90%;
-    height: 50px;
-    background-color: white;
+
+main .banner .image-overlay {
+  padding: 0;
+}
+
+main .banner .banner-white-space {
+  width: 90%;
+  height: 50px;
+  background-color: white;
+  position: relative;
+  top: -50px;
+}
+
+main .about-main {
+  margin: 35px;
+}
+
+main .about-main .banner-box p {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+main .about-main .banner-box .banner-title {
+  display: none;
+}
+
+main h1 {
+  font-size: 35px;
+}
+
+main .subtitle-container {
+  margin-bottom: 35px;
+}
+
+main .heritage-container img {
+  display: none;
+}
+
+main .heritage-container div:last-of-type {
+  padding-bottom: 20px;
+}
+
+main .leader-section {
+  margin: 35px;
+}
+
+main .leader-profile {
+  width: 100%;
+}
+
+main .leader-profile img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+main .leader-grid {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+main .job-title {
+  font-size: small;
+  font-weight: lighter;
+}
+
+main .icon {
+  width: 25px !important;
+  height: auto;
+  margin-right: 10px;
+}
+
+main .linkedin {
+  width: 25px !important;
+  height: auto;
+  margin-right: 10px;
+  content: url("./assets/icons/icon-linkedin.svg");
+}
+
+main .twitter {
+  width: 25px !important;
+  height: auto;
+  margin-right: 10px;
+  content: url("./assets/icons/icon-twitter.svg");
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  main {
+    /* leader section */
+  }
+  main .banner {
+    width: auto;
+    height: 790px;
+    background-image: url("./assets/about/tablet/image-hero.jpg");
+    background-size: contain;
+  }
+  main .banner .image-overlay {
+    max-width: 630px;
+  }
+  main .about-main {
     position: relative;
-    top: -50px;
-}
-h1 {
-    font-size: 35px;
-}
-.banner-title {
-    display: none;
-}
-.subtitle-container {
-    margin-bottom: 35px;
-}
-
-/* main */
-.about-main {
-    margin: 35px;
-}
-.banner-box p {
+    margin: 50px;
+  }
+  main .about-main .banner-box {
+    padding-left: 15px;
     padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-/* heritage section */
-.heritage-container img {
-    display: none;
-}
-.heritage-container div:last-of-type {
-    padding-bottom: 20px;
-}
-
-/* leader section */
-.leader-section {
-    margin: 35px;
-}
-.leader-profile {
+    padding-bottom: 0;
+    display: block;
+    position: absolute;
+    height: 415px;
+    width: 590px;
+    top: -500px;
+    right: -50px;
+    background-color: white;
+  }
+  main .about-main .banner-box h1 {
+    font-size: 50px;
+    padding: 50px;
+  }
+  main .about-main .banner-box p {
+    padding-left: 50px;
+  }
+  main .about-main .banner-box .banner-title {
+    display: block;
+    position: absolute;
+    font-weight: bold;
+    top: -65px;
+    right: 0;
+    font-size: 100px;
+    color: lightgray;
+  }
+  main .space {
+    height: 150px;
+  }
+  main .leader-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .leader-profile {
     width: 100%;
-}
-.leader-grid {
+  }
+  main .leader-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 350px 350px;
+        grid-template-columns: 350px 350px;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    gap: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: auto;
-}
-.leader-profile img{
-    width: 100%;
-    height: auto;
-    margin-bottom: 25px;
-}
-.job-title {
-    font-size: small;
-    font-weight: lighter;
-}
-
-.icon {
-    width: 25px !important;
-    height: auto;
-    margin-right: 10px;
-}
-.linkedin {
-    width: 25px !important;
-    height: auto;
-    margin-right: 10px;
-    content: url('./assets/icons/icon-linkedin.svg');
-}
-.twitter {
-    width: 25px !important;
-    height: auto;
-    margin-right: 10px;
-    content: url('./assets/icons/icon-twitter.svg');
-}
-
- /* Tablet */
-@media screen and (min-width: 768px) {
-    .banner {
-        width: auto;
-        height: 790px;
-        background-image: url('./assets/about/tablet/image-hero.jpg');
-        background-size: contain;
-    }
-    .banner .image-overlay {
-        max-width: 630px;
-    }
-    .banner-title {
-        display: block;
-        position: absolute;
-        font-weight: bold;
-        top: -65px;
-        right: 0;
-        font-size: 100px;
-        color: lightgray;
-    }
-    .about-main {
-        position: relative;
-        margin: 50px;
-    }
-    .banner-box {
-        display: block;
-        position: absolute;
-        height: 415px;
-        width: 590px;
-        padding: 35px;
-        top: -500px;
-        right: -50px;
-        background-color: white;
-    }
-
-    .about-main .banner-box {
-        padding-left: 15px;
-        padding-top: 50px;
-        padding-bottom: 0;
-    }
-    .banner-box h1 {
-        font-size: 50px;
-        padding: 50px;
-    }
-    .banner-box p {
-        padding-left: 50px;
-    }
-
-    .space {
-        height: 150px;
-    }
-
-    /* leader section */
-    .leader-section {
-        display: flex;
-        flex-direction: column;
-    }
-    .leader-profile {
-        width: 100%;
-    }
-    .leader-grid {
-        display: grid;
-        grid-template-columns: 350px 350px;
-        grid-template-rows: auto auto;
-        gap: 20px;
-        width: fit-content;
-        margin: auto;
-    }
+  }
 }
 
 /* Desktop CSS */
 @media screen and (min-width: 1200px) {
-    main {
-        max-width: 1250px;
-        padding-left: 50px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .about-main .banner-box {
-        width: 600px;
-        padding-left: 100px;
-        left: 450px;
-    }
-    .banner-title {
-        right: 50px;
-        font-size: 150px;
-    }
-
+  main {
+    max-width: 1250px;
+    padding-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     /* heritage section */
-    .heritage-container {
-        display: flex;
-        justify-content: space-between;
-    }
-    .heritage-container div:first-child {
-        width: 550px;
-    }
-    .heritage-container img {
-        display: block;
-        margin-left: 50px;
-    }
-
     /* leader section */
-    .leader-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 50px;
-    }
-    .leader-profile {
-        position: relative;
-    }
-    .leader-profile img {
-        margin-bottom: 15px;
-    }
-    .leader-grid {
+  }
+  main .about-main .banner-box {
+    width: 600px;
+    padding-left: 100px;
+    left: 450px;
+  }
+  main .about-main .banner-box .banner-title {
+    right: 50px;
+    font-size: 150px;
+  }
+  main .heritage-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .heritage-container div:first-child {
+    width: 550px;
+  }
+  main .heritage-container img {
+    display: block;
+    margin-left: 50px;
+  }
+  main .leader-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 50px;
+  }
+  main .leader-profile {
+    position: relative;
+  }
+  main .leader-profile img {
+    margin-bottom: 15px;
+  }
+  main .leader-grid {
+    -ms-grid-columns: 300px 300px;
         grid-template-columns: 300px 300px;
-        width: fit-content;
-        margin: 0;
-    }
-    .icon-container {
-        width: 100%;
-        height: 274px;
-        display: flex;
-        justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+  }
+  main .icon-container {
+    width: 100%;
+    height: 274px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
         align-content: center;
-        background-color: rgba(0, 0, 0, 0.6);
-        opacity: 0%;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        top: 0;
-    }
-    .icon-container:hover {
-        opacity: 100%;
-    }
-    .icon-container a {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+  }
+  main .icon-container a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
-        height: fit-content;
-    }
-    .icon-container:hover + a {
-        opacity: 100%;
-        margin: 0;
-    }
-    .linkedin {
-        content: url('./assets/icons/icon-linkedin-w.svg');
-        margin-bottom: 0 !important;
-    }
-    .twitter {
-        content: url('./assets/icons/icon-twitter-w.svg');
-        margin-bottom: 0 !important;
-    }
-    .job-title {
-        margin-bottom: 50px;
-    }
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .icon-container:hover {
+    opacity: 100%;
+  }
+  main .icon-container:hover + a {
+    opacity: 100%;
+    margin: 0;
+  }
+  main .linkedin {
+    content: url("./assets/icons/icon-linkedin-w.svg");
+    margin-bottom: 0 !important;
+  }
+  main .twitter {
+    content: url("./assets/icons/icon-twitter-w.svg");
+    margin-bottom: 0 !important;
+  }
+  main .job-title {
+    margin-bottom: 50px;
+  }
 }
+/*# sourceMappingURL=about.css.map */

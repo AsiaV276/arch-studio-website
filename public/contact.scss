@@ -1,0 +1,292 @@
+main {
+    h1 {
+        font-size: 35px;
+    }
+    .subtitle-container {
+        margin-bottom: 35px;
+    }
+    .banner {
+        height: 250px;
+        background-image: url('./assets/contact/mobile/image-hero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        .image-overlay {
+            padding: 0;
+        }
+        .banner-white-space {
+            width: 90%;
+            height: 50px;
+            background-color: white;
+            position: relative;
+            top: -50px;
+        }
+    }
+
+    #tell-about {
+        margin: 35px;
+        p {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .banner-box {
+            .banner-title {
+                display: none;
+            }
+        }
+    }
+
+        
+    /* contact details */
+    #details {
+        margin: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1:last-of-type {
+            padding-bottom: 40px;
+        }
+        p:first-of-type {
+            padding-bottom: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    } 
+    .office-details {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+        justify-content: space-between;
+        div:first-of-type {
+            margin-bottom: 15px;
+        }
+        div:last-of-type {
+            span {
+                a {
+                    display: flex;
+                }
+            }
+        }
+        .mail {
+            padding-right: 55px;
+        }
+        .address {
+            padding-right: 25px;
+        }
+        .phone {
+            padding-right: 40px;
+        }
+        .view-map {
+            padding: 0;
+        }
+        .view-map:hover {
+            text-decoration: underline;
+        }
+        .view-map-arrow {
+            height: fit-content;
+            padding-top: 3px;
+            padding-left: 10px;
+        }
+    }
+
+
+
+    /* contact form */
+
+    #connect {
+        margin: 35px;
+        margin-top: 75px;
+        h1 {
+            padding-bottom: 10px;
+        }
+        #form {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-bottom: 200px;
+            #name-err,
+            #email-err,
+            #message-err {
+                display: none;
+                color: red;
+                width: 100%;
+                p {
+                    position: relative;
+                    float: right;
+                    top: -30px;
+                    width: fit-content;
+                    font-size: 12px;
+                }
+            }
+            input, textarea{
+                border: none;
+                padding: 20px;
+                border-bottom: 1px solid black;
+            }
+            #name-span-filler,
+            #email-span-filler,
+            #message-span-filler {
+                height: 30px;
+            }
+            input:focus,
+            textarea:focus {
+                outline: none;
+                border-bottom: 2px solid;
+            }
+            .placeholder-err::-webkit-input-placeholder {
+                color: red;
+            }
+            .border-err,
+            .border-err:focus {
+                border-color: red;
+            }
+            input:focus::placeholder, 
+            textarea:focus::placeholder {
+                font-weight: bold;
+            }
+            button {
+                width: 75px;
+                height: 75px;
+                border: none;
+                position: absolute;
+                right: 0;
+                bottom: -45px;
+                cursor: pointer;
+                background-color: black;
+            }
+            button:hover {
+                background-color: lightgray;
+            }
+        }
+    }
+
+
+    /* map */
+    #mapid {
+        height: 400px;
+        z-index: 0;
+    }
+
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    main {
+        .banner {
+            width: auto;
+            height: 790px;
+            background-image: url('./assets/contact/tablet/image-hero.jpg');
+            background-size: contain;
+            .image-overlay {
+                max-width: 630px;
+            }
+        }
+        
+        #tell-about {
+            position: relative;
+            margin-left: 50px;
+            .banner-box {
+                padding-left: 15px;
+                padding-top: 50px;
+                padding-bottom: 0;
+                display: block;
+                position: absolute;
+                height: 415px;
+                width: 590px;
+                //padding: 35px;
+                top: -500px;
+                right: -50px;
+                background-color: white;
+                h1 {
+                    font-size: 50px;
+                    padding: 50px;
+                }
+                p {
+                    padding-left: 50px;
+                }
+                .banner-title {
+                    display: block;
+                    position: absolute;
+                    font-weight: bold;
+                    top: -65px;
+                    right: 0;
+                    font-size: 100px;
+                    color: lightgray;
+                }
+            } 
+            
+        }
+        
+        .space {
+            height: 150px;
+        }
+    
+        /* contact details */
+        #details {
+            margin: 50px;
+            .office-details {
+                flex-direction: row;
+                div:last-of-type {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+            }    
+        }
+        
+        /* map */
+        #mapid {
+            margin: 50px;
+        }
+        /* connect */
+        #connect {
+            margin: 50px;
+            margin-top: 75px;
+        }
+    }
+    
+}
+
+/*  Desktop CSS*/
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1250px;
+        padding-left: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        #tell-about {
+            .banner-box {
+                width: 600px;
+                padding-left: 100px;
+                left: 450px;
+                .banner-title {
+                    right: 50px;
+                    font-size: 150px;
+                }
+            }
+        }
+        
+        /* contact details */
+        #details {
+            flex-direction: row;
+            .office-details {
+                flex-direction: column;
+            }
+        }
+    
+        /* connect section */
+        #connect {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            #form {
+                width: 100%;
+            }
+            .subtitle-container {
+                margin-right: 225px;
+            }
+        }
+    }
+    
+}
