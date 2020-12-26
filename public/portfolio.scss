@@ -14,12 +14,23 @@ main {
         }
         .feat-projects {
             height: 100%;
+            width: 100%;
+            color: white;
             p {
                 width: auto;
             }
             .image-overlay {
                 display: flex;
                 align-items: flex-end;
+                height: 200px;
+                padding: 25px;
+                p:first-of-type {
+                    font-weight: bolder;
+                    font-size: large;
+                }
+                p:last-of-type {
+                    font-size: small;
+                }
             }
         }
         
@@ -72,46 +83,66 @@ main {
             flex-wrap: wrap;
             flex-direction: row;
             margin: 50px;
+
+            .feat-projects {
+                height: 100%;
+                color: white;
+                p {
+                    width: auto;
+                }
+                .image-overlay {
+                    display: flex;
+                    align-items: flex-end;
+                    height: 250px;
+                    padding: 25px;
+                    p:first-of-type {
+                        font-weight: bolder;
+                        font-size: large;
+                    }
+                    p:last-of-type {
+                        font-size: small;
+                    }
+                }
+            }
                
-        .seraph {
-            background-image: url('./assets/portfolio/tablet/image-seraph.jpg');
-        }
-        .eebox {
-            background-image: url('./assets/portfolio/tablet/image-eebox.jpg');
-        }
-        .federal {
-            background-image: url('./assets/portfolio/tablet/image-federal.jpg');
-        }
-        .delsol {
-            background-image: url('./assets/portfolio/tablet/image-del-sol.jpg');
-        }
-        .proto {
-            background-image: url('./assets/portfolio/tablet/image-prototype.jpg');
-        }
-        .tower {
-            background-image: url('./assets/portfolio/tablet/image-228b.jpg');
-        }
-        .edelweiss {
-            background-image: url('./assets/portfolio/tablet/image-edelweiss.jpg');
-        }
-        .netcry {
-            background-image: url('./assets/portfolio/tablet/image-netcry.jpg');
-        }
-        .hypers {
-            background-image: url('./assets/portfolio/tablet/image-hypers.jpg');
-        }
-        .sxiv {
-            background-image: url('./assets/portfolio/tablet/image-sxiv.jpg');
-        }
-        .trinity {
-            background-image: url('./assets/portfolio/tablet/image-trinity.jpg');
-        }
-        .paramour {
-            background-image: url('./assets/portfolio/tablet/image-paramour.jpg');
+            .seraph {
+                background-image: url('./assets/portfolio/tablet/image-seraph.jpg');
+            }
+            .eebox {
+                background-image: url('./assets/portfolio/tablet/image-eebox.jpg');
+            }
+            .federal {
+                background-image: url('./assets/portfolio/tablet/image-federal.jpg');
+            }
+            .delsol {
+                background-image: url('./assets/portfolio/tablet/image-del-sol.jpg');
+            }
+            .proto {
+                background-image: url('./assets/portfolio/tablet/image-prototype.jpg');
+            }
+            .tower {
+                background-image: url('./assets/portfolio/tablet/image-228b.jpg');
+            }
+            .edelweiss {
+                background-image: url('./assets/portfolio/tablet/image-edelweiss.jpg');
+            }
+            .netcry {
+                background-image: url('./assets/portfolio/tablet/image-netcry.jpg');
+            }
+            .hypers {
+                background-image: url('./assets/portfolio/tablet/image-hypers.jpg');
+            }
+            .sxiv {
+                background-image: url('./assets/portfolio/tablet/image-sxiv.jpg');
+            }
+            .trinity {
+                background-image: url('./assets/portfolio/tablet/image-trinity.jpg');
+            }
+            .paramour {
+                background-image: url('./assets/portfolio/tablet/image-paramour.jpg');
+            }
         }
     }
-}
-    
      
 }
 

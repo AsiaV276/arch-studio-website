@@ -21,6 +21,8 @@ main #project-section .project-img {
 
 main #project-section .feat-projects {
   height: 100%;
+  width: 100%;
+  color: white;
 }
 
 main #project-section .feat-projects p {
@@ -34,6 +36,17 @@ main #project-section .feat-projects .image-overlay {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: 200px;
+  padding: 25px;
+}
+
+main #project-section .feat-projects .image-overlay p:first-of-type {
+  font-weight: bolder;
+  font-size: large;
+}
+
+main #project-section .feat-projects .image-overlay p:last-of-type {
+  font-size: small;
 }
 
 main #project-section .seraph {
@@ -97,6 +110,30 @@ main #project-section .paramour {
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 50px;
+  }
+  main #project-section .feat-projects {
+    height: 100%;
+    color: white;
+  }
+  main #project-section .feat-projects p {
+    width: auto;
+  }
+  main #project-section .feat-projects .image-overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 250px;
+    padding: 25px;
+  }
+  main #project-section .feat-projects .image-overlay p:first-of-type {
+    font-weight: bolder;
+    font-size: large;
+  }
+  main #project-section .feat-projects .image-overlay p:last-of-type {
+    font-size: small;
   }
   main #project-section .seraph {
     background-image: url("./assets/portfolio/tablet/image-seraph.jpg");

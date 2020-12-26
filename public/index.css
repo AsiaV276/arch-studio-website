@@ -273,11 +273,24 @@ main #featured-section-main h1 {
   padding-bottom: 50px;
 }
 
-main .proj-number {
-  display: none;
+main #featured-section-main a {
+  text-decoration: none;
 }
 
-main .projects-container {
+main #featured-section-main .btn {
+  text-align: center;
+}
+
+main #featured-section-main .view-project-link {
+  text-decoration: none;
+  color: white;
+}
+
+main #featured-section-main .view-project-link:hover {
+  color: lightgray;
+}
+
+main #featured-section-main .projects-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,44 +303,54 @@ main .projects-container {
   margin-bottom: 25px;
 }
 
-main .feat-projects {
+main #featured-section-main .projects-container .feat-projects {
   width: 100%;
   color: white;
 }
 
-main .feat-projects .image-overlay {
+main #featured-section-main .projects-container .feat-projects .image-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 25px;
   height: 200px;
 }
 
-main .feat-projects .image-overlay p:first-of-type {
+main #featured-section-main .projects-container .feat-projects .image-overlay .proj-number {
+  display: none;
+}
+
+main #featured-section-main .projects-container .feat-projects .image-overlay p:first-of-type {
   font-weight: bolder;
   font-size: large;
 }
 
-main .feat-projects .image-overlay p:last-of-type {
+main #featured-section-main .projects-container .feat-projects .image-overlay p:last-of-type {
   font-size: small;
 }
 
-main .feat-projects a {
+main #featured-section-main .projects-container .feat-projects a {
   text-decoration: none;
 }
 
-main #featured-section-main a {
-  text-decoration: none;
+main #featured-section-main .projects-container .project-img {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-main #featured-section-main .btn {
-  text-align: center;
+main #featured-section-main .projects-container .delsol {
+  background-image: url("./assets/portfolio/mobile/image-del-sol.jpg");
 }
 
-main .view-project-link {
-  text-decoration: none;
-  color: white;
+main #featured-section-main .projects-container .proto {
+  background-image: url("./assets/portfolio/mobile/image-prototype.jpg");
 }
 
-main .view-project-link:hover {
-  color: lightgray;
+main #featured-section-main .projects-container .tower {
+  background-image: url("./assets/portfolio/mobile/image-228b.jpg");
 }
 
 /* footer */
@@ -534,7 +557,7 @@ footer .btn {
   main #featured-section-main .btn {
     display: none;
   }
-  main .featured-heading {
+  main #featured-section-main .featured-heading {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -542,10 +565,10 @@ footer .btn {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  main .featured-heading a {
+  main #featured-section-main .featured-heading a {
     text-decoration: none;
   }
-  main .see-all-btn {
+  main #featured-section-main .see-all-btn {
     display: block;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -556,20 +579,27 @@ footer .btn {
     color: white;
     padding: 15px 30px;
   }
-  main .projects-container .image-overlay {
+  main #featured-section-main .projects-container .feat-projects .image-overlay {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  main .feat-projects .image-overlay {
     height: 250px;
   }
-  main .proj-number {
+  main #featured-section-main .projects-container .feat-projects .image-overlay .proj-number {
     display: block;
     font-size: 225px;
     opacity: 0.5;
     position: relative;
     bottom: -90px;
+  }
+  main #featured-section-main .projects-container .delsol {
+    background-image: url("./assets/portfolio/tablet/image-del-sol.jpg");
+  }
+  main #featured-section-main .projects-container .proto {
+    background-image: url("./assets/portfolio/tablet/image-prototype.jpg");
+  }
+  main #featured-section-main .projects-container .tower {
+    background-image: url("./assets/portfolio/tablet/image-228b.jpg");
   }
   /* footer */
   footer, .footer-list {
@@ -755,7 +785,7 @@ footer .btn {
   main #about-us-section .image-overlay {
     padding-left: 150px;
   }
-  main .projects-container {
+  main #featured-section-main .projects-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -768,17 +798,17 @@ footer .btn {
             justify-content: center;
     gap: 15px;
   }
-  main .feat-projects {
+  main #featured-section-main .projects-container .feat-projects {
     width: 33%;
     height: auto;
   }
-  main .feat-projects .image-overlay {
+  main #featured-section-main .projects-container .feat-projects .image-overlay {
     height: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  main .proj-number {
+  main #featured-section-main .projects-container .feat-projects .image-overlay .proj-number {
     -ms-flex-item-align: start;
         align-self: flex-start;
     position: relative;
@@ -786,13 +816,13 @@ footer .btn {
     right: -35px;
     font-size: 150px;
   }
-  main .delsol {
+  main #featured-section-main .projects-container .delsol {
     background-image: url("./assets/portfolio/desktop/image-del-sol.jpg") !important;
   }
-  main .tower {
+  main #featured-section-main .projects-container .tower {
     background-image: url("./assets/portfolio/desktop/image-228b.jpg") !important;
   }
-  main .proto {
+  main #featured-section-main .projects-container .proto {
     background-image: url("./assets/portfolio/desktop/image-prototype.jpg") !important;
   }
   #slideshow-container,

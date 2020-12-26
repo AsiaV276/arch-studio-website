@@ -239,54 +239,66 @@ main {
         h1 {
             padding-bottom: 50px;
         }
-    } 
-    .proj-number {
-        display: none;
-    }
-    .projects-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 25px;
-        margin-bottom: 25px;
-    }
-    .feat-projects {
-        width: 100%;
-        color: white;
-
-        .image-overlay {
-            padding: 25px;
-            height: 200px;
-        }
-        .image-overlay {
-            p:first-of-type {
-                font-weight: bolder;
-                font-size: large;
-            }
-            p:last-of-type {
-                font-size: small;
-            }
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-
-    #featured-section-main {
         a {
             text-decoration: none;
         }
         .btn {
             text-align: center;
         } 
+        .view-project-link {
+            text-decoration: none;
+            color: white;
+        }
+        .view-project-link:hover {
+            color: lightgray;
+        }
+
+        
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 25px;
+        margin-bottom: 25px;
+        .feat-projects {
+            width: 100%;
+            color: white;
+            .image-overlay {
+                display: flex;
+                align-items: flex-end;
+                padding: 25px;
+                height: 200px;
+                .proj-number {
+                    display: none;
+                }
+                p:first-of-type {
+                    font-weight: bolder;
+                    font-size: large;
+                }
+                p:last-of-type {
+                    font-size: small;
+                }
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+        .project-img {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .delsol {
+            background-image: url('./assets/portfolio/mobile/image-del-sol.jpg');
+        }
+        .proto {
+            background-image: url('./assets/portfolio/mobile/image-prototype.jpg');
+        }
+        .tower {
+            background-image: url('./assets/portfolio/mobile/image-228b.jpg');
+        }
     }
-    .view-project-link {
-        text-decoration: none;
-        color: white;
     }
-    .view-project-link:hover {
-        color: lightgray;
-    }
+    
 }
 
 
@@ -493,41 +505,50 @@ footer {
             .btn {
                 display: none;
             }
-        }
-        .featured-heading {
-            display: flex;
-            justify-content: space-between;
-            a {
-                text-decoration: none;
+            .featured-heading {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    text-decoration: none;
+                }
             }
+            .see-all-btn {
+                display: block;
+                height: fit-content;
+                font-size: medium;
+                border: none;
+                background-color: black;
+                color: white;
+                padding: 15px 30px;
+            }
+            .projects-container {
+                .feat-projects {
+                    .image-overlay {
+                        justify-content: space-between;
+                        height: 250px;
+                        .proj-number {
+                            display: block;
+                            font-size: 225px;
+                            opacity: 0.5;
+                            position: relative;
+                            bottom: -90px;
+                        }
+                    }
+                }
+                .delsol {
+                    background-image: url('./assets/portfolio/tablet/image-del-sol.jpg');
+                }
+                .proto {
+                    background-image: url('./assets/portfolio/tablet/image-prototype.jpg');
+                }
+                .tower {
+                    background-image: url('./assets/portfolio/tablet/image-228b.jpg');
+                }
+            }
+            
+            
         }
         
-        .see-all-btn {
-            display: block;
-            height: fit-content;
-            font-size: medium;
-            border: none;
-            background-color: black;
-            color: white;
-            padding: 15px 30px;
-        }
-        .projects-container {
-            .image-overlay {
-                justify-content: space-between;
-            }
-        }
-        .feat-projects {
-            .image-overlay {
-                height: 250px;
-            }
-        }
-        .proj-number {
-            display: block;
-            font-size: 225px;
-            opacity: 0.5;
-            position: relative;
-            bottom: -90px;
-        }
     
     }
     
@@ -656,75 +677,79 @@ footer {
                 }
             }
         }
-        
-    /* welcome section */
-    #welcome-section {
-        padding-top: 0;
-        padding-left: 50px;
-
-        .welcome-desktop {
-            display: block;
-            font-size: 175px !important;
+            
+        /* welcome section */
+        #welcome-section {
             padding-top: 0;
-            padding-bottom: 0;
-            position: relative;
-            bottom: -175px;
-            left: -120px;
-        }
-        .welcome-desktop-div {
-            display: flex;
-            div {
-                margin-top: 100px;
-                margin-left: 100px;
-                margin-right: 100px;
-                z-index: 2;
-            }
-            img {
+            padding-left: 50px;
+
+            .welcome-desktop {
                 display: block;
+                font-size: 175px !important;
+                padding-top: 0;
+                padding-bottom: 0;
+                position: relative;
+                bottom: -175px;
+                left: -120px;
+            }
+            .welcome-desktop-div {
+                display: flex;
+                div {
+                    margin-top: 100px;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    z-index: 2;
+                }
+                img {
+                    display: block;
+                }
             }
         }
-    }
-    
-    /* about us section */
-    #about-us-section {
-        background-image: url('./assets/home/desktop/image-small-team.jpg');
-        .image-overlay {
-            padding-left: 150px;
+        
+        /* about us section */
+        #about-us-section {
+            background-image: url('./assets/home/desktop/image-small-team.jpg');
+            .image-overlay {
+                padding-left: 150px;
+            }
         }
-    }
-    
-    /* featured project section*/
-    .projects-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 15px;
-    }
-    .feat-projects {
-        width: 33%;
-        height: auto;
-        .image-overlay {
-            height: 450px;
-            display: flex;
+        
+        /* featured project section*/
+        #featured-section-main {
+            .projects-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 15px;
+                .feat-projects {
+                    width: 33%;
+                    height: auto;
+                    .image-overlay {
+                        height: 450px;
+                        display: flex;
+                        .proj-number {
+                            align-self: flex-start;
+                            position: relative;
+                            top: 50px;
+                            right: -35px;
+                            font-size: 150px;
+                        }
+                    }
+                }
+                
+                
+                .delsol {
+                    background-image: url('./assets/portfolio/desktop/image-del-sol.jpg') !important;
+                }
+                .tower {
+                    background-image: url('./assets/portfolio/desktop/image-228b.jpg') !important;
+                }
+                .proto {
+                    background-image: url('./assets/portfolio/desktop/image-prototype.jpg') !important;
+                }
+            }
         }
-    }
-    
-    .proj-number {
-        align-self: flex-start;
-        position: relative;
-        top: 50px;
-        right: -35px;
-        font-size: 150px;
-    }
-    .delsol {
-        background-image: url('./assets/portfolio/desktop/image-del-sol.jpg') !important;
-    }
-    .tower {
-        background-image: url('./assets/portfolio/desktop/image-228b.jpg') !important;
-    }
-    .proto {
-        background-image: url('./assets/portfolio/desktop/image-prototype.jpg') !important;
-    }
+        
     }
 
     #slideshow-container,
